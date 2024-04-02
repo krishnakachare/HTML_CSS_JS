@@ -1,0 +1,17 @@
+{
+  "movies": [
+    {
+      "id": "1",
+      "Title": "RRR1",
+      "Poster": "https://images.hindustantimes.com/tech/img/2022/05/06/960x540/rrr_movie_review_1648203259008_1648203259335_1651724985295_1651844495536.webp",
+      "Year": "2023"
+    },
+    {
+      "id": "25",
+      "Title": "Incredibles3",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BMTEzNzY0OTg0NTdeQTJeQWpwZ15BbWU4MDU3OTg3MjUz._V1_SX300.jpg",
+      "Year": "2015"
+    }
+  ],
+  "books": []
+}
