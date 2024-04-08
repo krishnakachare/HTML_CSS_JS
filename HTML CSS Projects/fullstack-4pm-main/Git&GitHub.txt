@@ -1,0 +1,20 @@
+Git is an application to track version of your software/code. you need to install it. 
+
+after installing check it by " git -v " command in command prompt.
+(while installing select vscode as default code editor)
+
+Github is a website to store/deploy/share code
+
+Git stages:
+working area: git init
+staging area: git add files(.)
+  Errors: git config --global user.email "ur email"
+          git config --global user.name "ur username"
+
+          In VScode,left bottom , u have to signup
+
+local repository: git commit -m "message"
+ it will create a local saved copy
+cloud repository:
+setup: git remote add  origin https://github.com/prasad-bigdp/fullstack-4pm.git
+push: git push -u origin main

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB RTC</title>
+</head>
+<body>
+    <!-- audio and vido communication-  signalling-server -->
+    <video id="localvideo" autoplay muted></video>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+   <script>
+   const lv= document.getElementById('localvideo');
+   const start=document.getElementById('start');
+   const stop=document.getElementById('stop');
+   start.addEventListener('click',startCall)
+      stop.addEventListener('click',stopCall)
+
+   let local;
+   let peersConnection;
+   async function startCall(){
+
+       try{
+             local=await navigator.mediaDevices.getUserMedia({video:true,audio:true});
+             lv.srcObject= local;
+
+       }
+       catch(err){
+
+       }
+
+   }
+   async function stopCall(){
+                      local = await navigator.mediaDevices.getUserMedia({ video: false, audio: true });
+                      lv.srcObject=local;
+
+   }
+   </script>
+</body>
+</html>
