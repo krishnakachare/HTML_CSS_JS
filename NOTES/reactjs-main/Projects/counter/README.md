@@ -1,1 +1,0 @@
-# Simple Counter App for Beginners
