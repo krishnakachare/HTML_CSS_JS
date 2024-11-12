@@ -1,4 +1,4 @@
-Sure! Here's a comprehensive list of key points for a Bootstrap syllabus tailored for web development:
+ Bootstrap syllabus for web development:
 
 1. **Introduction to Bootstrap**:
     - Overview of Bootstrap and its history
@@ -121,5 +121,3 @@ Sure! Here's a comprehensive list of key points for a Bootstrap syllabus tailore
     - Upcoming features and improvements
     - Staying updated with Bootstrap developments
     - Contributing to the Bootstrap community
-
-This syllabus provides a detailed roadmap for learning and mastering Bootstrap, ensuring students can effectively use the framework to create responsive and modern web applications.
