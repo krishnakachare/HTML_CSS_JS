@@ -1,4 +1,4 @@
-Here's a short roadmap for learning CSS:
+# Roadmap for learning CSS:
 
 1. Basic CSS: Start with understanding selectors, properties, and values to style HTML elements.
 
