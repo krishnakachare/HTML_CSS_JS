@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>HTML Anchor and Image Tags</title>
+</head>
+
+<body>
+	<!-- This is a comment. It won't be displayed in the web page. -->
+
+	<h2 id="C4">Chapter 4</h2>
+
+	<!-- The <a> (anchor) tag is used to create hyperlinks. -->
+	<!-- It has an "href" attribute that specifies the URL the link points to. -->
+	<a href="https://minskole.in/">Minskole Website</a>
+
+	<!-- You can also use the "target" attribute to control how the link opens. -->
+	<!-- "_blank" opens the link in a new tab or window. -->
+	<!-- #The target attribute can have one of the following values:
+			_self - Default. Opens the document in the same window/tab as it was clicked
+			_blank - Opens the document in a new window or tab
+			_parent - Opens the document in the parent frame
+			_top - Opens the document in the full body of the window -->
+
+	<a href="https://minskole.in/" target="_blank">Visit Example.com in a new tab</a>
+
+	<!-- The <img> (image) tag is used to display images on a web page. -->
+	<!-- It has a "src" attribute that specifies the image file's URL. -->
+	<img src="MinskoleLogo1.jpg" alt="An example image" />
+
+	<!-- The "alt" attribute provides alternative text for accessibility. -->
+	<!-- It's important for screen readers and when the image fails to load. -->
+
+	<!-- You can also specify the width and height of the image using the "width" and "height" attributes. -->
+	<img src="MinskoleLogo1.jpg" alt="An example image" width="300" height="200" />
+	<!-- Creating an email link -->
+	<a href="mailto:pune@minskole.in">Minskole:Email us</a>
+
+	<P>
+		<!-- Adding a telephone link -->
+		<a href="Mob:+91 78419 38548">Call us</a>
+	</P>
+
+
+	<!-- Images can be linked, just like text. -->
+	<a href="https://minskole.in/">
+		<img src="MinskoleLogo.jpg" alt="Click me for a larger view" />
+	</a>
+
+	<!-- Images can also be used as links to other pages or resources. -->
+	<a href="https://minskole.in/">
+		<img src="MinskoleLogo.jpg" alt="Visit Example.com" />
+	</a>
+
+
+
+	<!-- Absolute URLs vs. Relative URLs
+		Both examples above are using an absolute URL (a full web address) in the href attribute.
+
+		A local link (a link to a page within the same website) is specified with a relative URL (without the "https://www" part):
+	 -->
+
+	<!-- Button as a Link:
+		To use an HTML button as a link, you have to add some JavaScript code.
+		JavaScript allows you to specify what happens at certain events, such as a click of a button: -->
+	<button onclick='document.location="https://minskole.in/"'>Click: Minskole</button>
+
+
+	<!-- Link Titles
+		The title attribute specifies extra information about an element. The information is most often shown as a tooltip text when the mouse moves over the element. -->
+	<a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit our HTML Tutorial</a>
+
+	<!-- More on Absolute URLs and Relative URLs -->
+	<a href="https://www.w3schools.com/html/default.asp">HTML tutorial</a>
+	<a href="/html/default.asp">HTML tutorial</a>
+	<a href="default.asp">HTML tutorial</a>
+
+
+
+	<!-- Create a Bookmark in HTML: 
+	Use the id attribute (id="value") to define bookmarks in a page
+	Use the href attribute (href="#value") to link to the bookmark
+	-->
+	<p> <a href="#C4">Jump to Chapter 4</a>
+	</p>
+
+
+</body>
+
+</html>

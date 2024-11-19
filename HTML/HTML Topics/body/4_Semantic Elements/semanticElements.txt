@@ -1,0 +1,3 @@
+All semantic elements are block elements.
+Eg: header,footer,main,address,section,article etc..,
+

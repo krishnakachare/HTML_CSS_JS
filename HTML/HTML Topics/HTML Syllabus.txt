@@ -1,40 +1,29 @@
-# The HTML5 syllabus covers a broad range of topics essential for web development. Below are the key points typically included in an HTML5 syllabus:
+# HTML5 syllabus:
 
 1. Introduction to HTML5:
+    - Browser history
     - Overview and evolution of HTML5
-    - Key features and improvements over previous versions
-
+    - HTML Editors (Notepad, VSC)
+   
 2. HTML5 Document Structure:
-    - Doctype declaration
+    - HTML5 Doctype declaration (!!! -> <!DOCTYPE html>)
     - Basic structure of an HTML5 document (html, head, body)
     - Semantic elements (header, footer, section, article, aside, nav)
 
 3. Basic HTML Elements:
-    - Text elements (p, h1-h6, blockquote, pre, hr, br)
+    - Text elements (h1-h6, p, q, blockquote, pre, hr, br, address)
+    - <img>
+    - link(<a>)
+    - <style>
     - Inline elements (span, a, b, i, em, strong, code)
 
-4. Forms and Input Types:
-    - Form elements (form, input, textarea, select, option, button, label, fieldset, legend)
+4. Input Types:
     - New input types (email, url, date, time, color, number, range, search)
+
+4. Forms :
+    - Form elements (form, input, textarea, select, option, button, label, fieldset, legend)
     - Form attributes and validation (required, placeholder, pattern, autocomplete, novalidate)
-
-5. Media Elements:
-    - Embedding images (img)
-    - Using audio (audio) and video (video) elements
-    - Attributes and controls for multimedia
-
-6. Graphics and Multimedia:
-    - Introduction to the canvas element
-    - Basic canvas drawing operations
-    - Introduction to SVG (Scalable Vector Graphics)
-
-7. Advanced HTML5 APIs:
-    - Geolocation API
-    - Web Storage API (localStorage and sessionStorage)
-    - Web Workers
-    - Web Sockets
-    - Drag and Drop API
-
+  
 8. Linking and Navigation:
     - Creating hyperlinks (a)
     - Anchor attributes (href, target, rel)
@@ -58,6 +47,23 @@
     - Meta tags (meta)
     - Linking stylesheets and scripts (link, script)
     - Favicons (link rel="icon")
+
+5. Media Elements:
+    - Embedding images (img)
+    - Using audio (audio) and video (video) elements
+    - Attributes and controls for multimedia
+
+6. Graphics and Multimedia:
+    - Introduction to the canvas element
+    - Basic canvas drawing operations
+    - Introduction to SVG (Scalable Vector Graphics)
+
+7. Advanced HTML5 APIs:
+    - Geolocation API
+    - Web Storage API (localStorage and sessionStorage)
+    - Web Workers
+    - Web Sockets
+    - Drag and Drop API
 
 13. Responsive Web Design:
     - Meta viewport tag
