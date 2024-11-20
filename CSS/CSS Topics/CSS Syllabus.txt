@@ -1,4 +1,4 @@
- CSS syllabus for web development:
+ # CSS syllabus :
 
 1. Introduction to CSS:
     - Overview of CSS and its purpose
@@ -97,12 +97,5 @@
     - Reducing and managing specificity
     - Performance optimization techniques
 
-19. Practical Projects and Case Studies:
+19. Practical Projects :
     - Building responsive web pages
-    - Implementing common UI components (navigation bars, modals, forms)
-    - Real-world examples and hands-on projects
-
-20. Future of CSS:
-    - Upcoming features and specifications
-    - How to stay updated with CSS developments
-    - Using CSS in modern web development environments (e.g., React, Vue)

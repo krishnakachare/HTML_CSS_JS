@@ -1,0 +1,13 @@
+The <button> tag supports several attributes that can be used to customize its appearance and behavior. Some of the most commonly used features are:
+
+type: This attribute specifies the type of button. It can be set to "submit" to submit a form, "reset" to reset a form, or "button" to perform some other action.
+name: This attribute specifies a name for the button, which can be used to identify it in the form data when the form is submitted.
+value: This attribute specifies a value for the button, which will be sent to the server when the form is submitted.
+disabled: This attribute disables the button, making it unclickable.
+onclick: This attribute specifies a JavaScript function to be executed when clicking the button.
+form: This attribute specifies the form that the button belongs to.
+formaction: This attribute specifies the URL of the file that will process the form data when the button is clicked.
+formenctype: This attribute specifies the type of encoding to use when sending form data to the server.
+formmethod: This attribute specifies the HTTP method to use when sending form data to the server.
+formnovalidate: This attribute specifies that the form data should not be validated when clicking the button.
+formtarget: This attribute specifies where to display the response after submitting the form.

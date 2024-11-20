@@ -1,0 +1,7 @@
+<span> vs <div> :=>
+    A div element is used for block-level organization and styling of page elements, whereas a span element is used for inline organization and styling.
+
+<span> :=>
+    The <span> tag is an inline container used to mark up a part of a text, or a part of a document.
+    The <span> tag is easily styled by CSS or manipulated with JavaScript using the class or id attribute.
+    The <span> tag is much like the <div> element, but <div> is a block-level element and <span> is an inline element.

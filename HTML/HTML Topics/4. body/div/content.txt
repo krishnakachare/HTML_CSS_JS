@@ -1,0 +1,19 @@
+The div tag in HTML is known as the division tag. The div tag is applied to HTML documents to create content segmentation in a web page, such as images, text, headers, footers, navigation bars, etc. The <div> tag contains both an opening and a closing tag. Since the HTML <div> tag helps users create different data blocks to represent different contexts, it is the most commonly used tag in web development.
+
+HTML provides various tags for different purposes of creating web pages. The <div> tag can be used instead of most all block-level tags and is not affecting the context of the layout of the HTML document. Since the <div> tag is a block-level element, it starts on a new line. The use of this HTML tag reduces the program's complexity for the web designer. Therefore, it is advisable to use div tags.
+
+
+# An example of an HTML div element:
+
+        <div class="card-body">
+            <h2>This is a title inside the div element</h2>
+            <ol>
+                <li>Identifiers</li>
+                <li>Keywords</li>
+                <li>Constants</li>
+                <li>Strings</li>
+                <li>Operators</li>
+                <li>Special Symbols</li>
+            </ol>
+        </div>
+        <p>The above example displays some sample content inside a div element.</p>

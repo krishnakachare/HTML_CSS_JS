@@ -65,7 +65,7 @@ body {
   font: style variant weight size family;
 }
 
-/***************************
+/************************************************************
 
 ------------ 02: Text -----------
 
@@ -131,7 +131,7 @@ image, position, size, etc., of the document.
   background: color image repeat attachment position;
 }
 
-/***************************
+/*********************************************************
 
 ------------ 04: Border -----------
 
