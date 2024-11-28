@@ -1,0 +1,61 @@
+<!-- ### To-Do List App with Local Storage:
+        HTML5 Topics Covered:
+        - Web Storage API (localStorage)
+        - Forms and input handling
+        - JavaScript integration with HTML5 -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <style>
+        ul {
+            list-style-type: none;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>To-Do List</h1>
+    <input type="text" id="task" placeholder="Enter task">
+    <button onclick="addTask()">Add Task</button>
+
+    <ul id="taskList"></ul>
+
+    <script>
+        function addTask() {
+            let task = document.getElementById('task').value;
+            if (task) {
+                let tasks = JSON.parse(localStorage.getItem('tasks')) || [];
+                tasks.push(task);
+                localStorage.setItem('tasks', JSON.stringify(tasks));
+                displayTasks();
+            }
+        }
+
+        function displayTasks() {
+            let tasks = JSON.parse(localStorage.getItem('tasks')) || [];
+            let taskList = document.getElementById('taskList');
+            taskList.innerHTML = '';
+            tasks.forEach(task => {
+                let li = document.createElement('li');
+                li.textContent = task;
+                taskList.appendChild(li);
+            });
+        }
+
+        // Display tasks when the page loads
+        window.onload = displayTasks;
+    </script>
+</body>
+
+</html>

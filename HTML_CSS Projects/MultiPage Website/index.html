@@ -1,0 +1,89 @@
+<!-- ### Multi-Page Restaurant Menu Website:
+        HTML5 Topics Covered:
+        - Linking multiple HTML pages
+        - Embedding images and videos
+        - Forms (order form, contact form) -->
+
+<!-- index.html (Home Page) -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Welcome to Our Restaurant</h1>
+    <p>Enjoy delicious meals from our menu.</p>
+</body>
+
+</html>
+
+<!-- menu.html (Menu Page) -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Our Menu</h1>
+    <ul>
+        <li>Appetizer: Caesar Salad</li>
+        <li>Main Course: Grilled Salmon</li>
+        <li>Dessert: Chocolate Cake</li>
+    </ul>
+</body>
+
+</html>
+
+<!-- contact.html (Contact Page) -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Contact Us</h1>
+    <form action="submit_contact.php" method="POST">
+        <input type="text" name="name" placeholder="Your Name">
+        <input type="email" name="email" placeholder="Your Email">
+        <textarea name="message" placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</body>
+
+</html>

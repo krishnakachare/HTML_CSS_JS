@@ -1,0 +1,49 @@
+<!-- ### Quiz App with JavaScript:
+        HTML5 Topics Covered:
+        - Forms
+        - Event handling in HTML5
+        - JavaScript for DOM manipulation -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+</head>
+
+<body>
+    <h1>Quiz: JavaScript
+
+        Basics</h1>
+    <form id="quizForm">
+        <div>
+            <p>1. What does HTML stand for?</p>
+            <input type="radio" name="q1" value="Hyper Text Markup Language"> Hyper Text Markup Language<br>
+            <input type="radio" name="q1" value="Hyper Tool Markup Language"> Hyper Tool Markup Language<br>
+        </div>
+        <div>
+            <p>2. What is the correct syntax to output "Hello World" in JavaScript?</p>
+            <input type="radio" name="q2" value="echo('Hello World');"> echo('Hello World');<br>
+            <input type="radio" name="q2" value="console.log('Hello World');"> console.log('Hello World');<br>
+        </div>
+        <button type="button" onclick="checkAnswers()">Submit</button>
+    </form>
+
+    <script>
+        function checkAnswers() {
+            let score = 0;
+            let form = document.getElementById('quizForm');
+            let q1 = form.q1.value;
+            let q2 = form.q2.value;
+
+            if (q1 === "Hyper Text Markup Language") score++;
+            if (q2 === "console.log('Hello World');") score++;
+
+            alert("You scored " + score + " out of 2.");
+        }
+    </script>
+</body>
+
+</html>
