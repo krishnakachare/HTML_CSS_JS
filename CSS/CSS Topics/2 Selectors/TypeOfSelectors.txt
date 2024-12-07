@@ -1,5 +1,4 @@
 # We can divide CSS selectors into five categories:
-
     1. Simple selectors (select elements based on name, id, class)
     2. Combinator selectors (select elements based on a specific relationship between them)
     3. Pseudo-class selectors (select elements based on a certain state)

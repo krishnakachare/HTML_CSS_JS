@@ -11,7 +11,7 @@ open terminal---> new terminal--> goto specific folder
 First time you may end up git config errors.like this.
 
 git config --global user.email "you@example.com"
-  git config --global user.name "Your Name"
+git config --global user.name "Your Name"
 
 to set your account's default identity.
 Omit --global to set the identity only in this repository.
@@ -26,3 +26,4 @@ git config --global user.name "username"
 After this try git add . and git commit -m "update" again.
 4. git remote add origin "link"
 5. git push -u origin main
+

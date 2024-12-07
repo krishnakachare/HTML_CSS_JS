@@ -34,6 +34,7 @@ input[type="text"]
 {
      property-name:value;
 }
+
 /* pseudo selectors  -- all pseudo selectors starts with : */
 /*link pseudo selectors*/
 a:link---> anchor tag which is a link 

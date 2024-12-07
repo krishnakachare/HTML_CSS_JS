@@ -1,263 +1,248 @@
-17. HTML5 and CSS3 Integration:
+## HTML5 and CSS3 Integration:
     - Linking external CSS files
     - Using CSS to style HTML5 elements
     - CSS3 features for enhanced styling
 
+====================================================
+### 1. Linking External CSS Files:
+    CSS files can be linked to HTML documents to separate content (HTML) from presentation (CSS).
 
+Example: Linking External CSS
 
-Here are detailed examples for **HTML5 and CSS3 Integration** topics:
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>External CSS Example</title>
+            <!-- Linking an external CSS file -->
+            <link rel="stylesheet" href="styles.css">
+        </head>
+        <body>
+            <header>
+                <h1>Welcome to HTML5 and CSS3</h1>
+            </header>
+            <section>
+                <p>This is an example of linking external CSS files to an HTML document.</p>
+            </section>
+        </body>
+        </html>
 
-### 1. **Linking External CSS Files**
+        `styles.css` (external CSS file):    
+                /* Styling the header */
+                header {
+                    background-color: #4CAF50;
+                    color: white;
+                    padding: 20px;
+                    text-align: center;
+                }
 
-CSS files can be linked to HTML documents to separate content (HTML) from presentation (CSS).
+                /* Styling the section */
+                section {
+                    margin: 20px;
+                    font-family: Arial, sans-serif;
+                    line-height: 1.6;
+                }
 
-**Example: Linking External CSS**
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>External CSS Example</title>
-    <!-- Linking an external CSS file -->
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>Welcome to HTML5 and CSS3</h1>
-    </header>
-    <section>
-        <p>This is an example of linking external CSS files to an HTML document.</p>
-    </section>
-</body>
-</html>
-```
+-----------------------------------------------------
+### 2. Using CSS to Style HTML5 Elements:
+    HTML5 introduces semantic elements like `<header>`, `<section>`, `<article>`, and `<footer>`, which can be styled using CSS.
 
-**`styles.css` (external CSS file):**
-```css
-/* Styling the header */
-header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
+Example: Styling HTML5 Elements
 
-/* Styling the section */
-section {
-    margin: 20px;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-}
-```
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Styling HTML5 Elements</title>
+            <style>
+                header {
+                    background: #2E86C1;
+                    color: #fff;
+                    padding: 15px;
+                    text-align: center;
+                }
+                nav {
+                    background: #F39C12;
+                    padding: 10px;
+                }
+                nav ul {
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 0;
+                    display: flex;
+                    justify-content: center;
+                }
+                nav ul li {
+                    margin: 0 15px;
+                }
+                nav ul li a {
+                    text-decoration: none;
+                    color: white;
+                }
+                section {
+                    padding: 20px;
+                    background: #F4F6F7;
+                }
+                footer {
+                    background: #34495E;
+                    color: white;
+                    text-align: center;
+                    padding: 10px;
+                    position: fixed;
+                    bottom: 0;
+                    width: 100%;
+                }
+            </style>
+        </head>
+        <body>
+            <header>
+                <h1>My HTML5 Page</h1>
+            </header>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <section>
+                <h2>Welcome to HTML5 and CSS3 Integration</h2>
+                <p>This section demonstrates styling semantic HTML5 elements.</p>
+            </section>
+            <footer>
+                &copy; 2024 My Website
+            </footer>
+        </body>
+        </html>
 
----
+-----------------------------------------------
+### 3. CSS3 Features for Enhanced Styling:
+    CSS3 introduces powerful new features like transitions, animations, gradients, and flexbox/grid layouts.
+------------------------------------------
+#### a. Transitions for Smooth Effects:
 
-### 2. **Using CSS to Style HTML5 Elements**
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>CSS3 Transitions</title>
+            <style>
+                button {
+                    background: #2980B9;
+                    color: white;
+                    padding: 10px 20px;
+                    border: none;
+                    cursor: pointer;
+                    transition: background-color 0.3s ease, transform 0.3s ease;
+                }
+                button:hover {
+                    background: #3498DB;
+                    transform: scale(1.1);
+                }
+            </style>
+        </head>
+        <body>
+            <button>Hover Me</button>
+        </body>
+        </html>
 
-HTML5 introduces semantic elements like `<header>`, `<section>`, `<article>`, and `<footer>`, which can be styled using CSS.
+------------------------------------------------
+#### b. CSS3 Animations:
 
-**Example: Styling HTML5 Elements**
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Styling HTML5 Elements</title>
-    <style>
-        header {
-            background: #2E86C1;
-            color: #fff;
-            padding: 15px;
-            text-align: center;
-        }
-        nav {
-            background: #F39C12;
-            padding: 10px;
-        }
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-        }
-        nav ul li {
-            margin: 0 15px;
-        }
-        nav ul li a {
-            text-decoration: none;
-            color: white;
-        }
-        section {
-            padding: 20px;
-            background: #F4F6F7;
-        }
-        footer {
-            background: #34495E;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>My HTML5 Page</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <section>
-        <h2>Welcome to HTML5 and CSS3 Integration</h2>
-        <p>This section demonstrates styling semantic HTML5 elements.</p>
-    </section>
-    <footer>
-        &copy; 2024 My Website
-    </footer>
-</body>
-</html>
-```
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>CSS3 Animations</title>
+            <style>
+                @keyframes bounce {
+                    0%, 100% {
+                        transform: translateY(0);
+                    }
+                    50% {
+                        transform: translateY(-20px);
+                    }
+                }
+                .animated {
+                    width: 100px;
+                    height: 100px;
+                    background: #E74C3C;
+                    margin: 50px auto;
+                    animation: bounce 1s infinite;
+                }
+            </style>
+        </head>
+        <body>
+            <div class="animated"></div>
+        </body>
+        </html>
 
----
+---------------------------------------------
+#### c. Flexbox for Responsive Layouts:
 
-### 3. **CSS3 Features for Enhanced Styling**
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Flexbox Layout</title>
+            <style>
+                .container {
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    height: 100vh;
+                    background: #ECF0F1;
+                }
+                .box {
+                    width: 100px;
+                    height: 100px;
+                    background: #3498DB;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: white;
+                    font-family: Arial, sans-serif;
+                    font-size: 20px;
+                }
+            </style>
+        </head>
+        <body>
+            <div class="container">
+                <div class="box">1</div>
+                <div class="box">2</div>
+                <div class="box">3</div>
+            </div>
+        </body>
+        </html>
 
-CSS3 introduces powerful new features like **transitions**, **animations**, **gradients**, and **flexbox/grid layouts**.
+--------------------------------------------
+#### d. Gradients for Modern Backgrounds:
 
-#### a. **Transitions for Smooth Effects**
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS3 Transitions</title>
-    <style>
-        button {
-            background: #2980B9;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            cursor: pointer;
-            transition: background-color 0.3s ease, transform 0.3s ease;
-        }
-        button:hover {
-            background: #3498DB;
-            transform: scale(1.1);
-        }
-    </style>
-</head>
-<body>
-    <button>Hover Me</button>
-</body>
-</html>
-```
-
-#### b. **CSS3 Animations**
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS3 Animations</title>
-    <style>
-        @keyframes bounce {
-            0%, 100% {
-                transform: translateY(0);
-            }
-            50% {
-                transform: translateY(-20px);
-            }
-        }
-        .animated {
-            width: 100px;
-            height: 100px;
-            background: #E74C3C;
-            margin: 50px auto;
-            animation: bounce 1s infinite;
-        }
-    </style>
-</head>
-<body>
-    <div class="animated"></div>
-</body>
-</html>
-```
-
-#### c. **Flexbox for Responsive Layouts**
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flexbox Layout</title>
-    <style>
-        .container {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            height: 100vh;
-            background: #ECF0F1;
-        }
-        .box {
-            width: 100px;
-            height: 100px;
-            background: #3498DB;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            font-family: Arial, sans-serif;
-            font-size: 20px;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <div class="box">1</div>
-        <div class="box">2</div>
-        <div class="box">3</div>
-    </div>
-</body>
-</html>
-```
-
-#### d. **Gradients for Modern Backgrounds**
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS3 Gradients</title>
-    <style>
-        body {
-            background: linear-gradient(to right, #6A82FB, #FC5C7D);
-            height: 100vh;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            font-family: Arial, sans-serif;
-        }
-    </style>
-</head>
-<body>
-    <h1>Beautiful Gradient Background</h1>
-</body>
-</html>
-```
-
-These examples showcase how CSS3 features can enhance the visual and functional aspects of HTML5 elements. Let me know if you'd like further exploration on any topic!
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>CSS3 Gradients</title>
+            <style>
+                body {
+                    background: linear-gradient(to right, #6A82FB, #FC5C7D);
+                    height: 100vh;
+                    margin: 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: white;
+                    font-family: Arial, sans-serif;
+                }
+            </style>
+        </head>
+        <body>
+            <h1>Beautiful Gradient Background</h1>
+        </body>
+        </html>

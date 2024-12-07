@@ -1,5 +1,3 @@
-//We discusse in HTML till tables
-Just understand how css works
 CSS: cascading style sheets. these are used to include styling/designing into Web pages.
 There are three ways to achieve CSS.
 1. Inline: Inline css means in the line of html element, style will applied as a attribute.

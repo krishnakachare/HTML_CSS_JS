@@ -11,8 +11,7 @@ display: table --> will elements in a container as table elements.
 
 display:none will remove the element from DOM such that its space is occupied by next element.
 
-
-
+======================
 Display: flex;
 
 Flex deals with two axes. Main and cross axis
@@ -22,21 +21,3 @@ cross axis-- where each element is arranged.
 flex is aproperty of display. it should be given to container
 
 Flex is mainly used when you want to show element in one direction or dimension
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

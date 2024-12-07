@@ -1,0 +1,12 @@
+Download & install code editor: VSC
+-----------------------------
+Extension: Prettier
+setting->setting
+Search --> Default formatter --> Editor:Default formmater --> Select Prettier - code formatter
+Search --> Format on save --> Check 
+Search --> Autosave --> Files: Auto save -> Select onFocusChange
+Search --> Tab Size --> Editor: Tab Size -> 2
+----------------------------------
+Extension for color: one monokai
+----------------------------------
+Create & add code folder in VSC

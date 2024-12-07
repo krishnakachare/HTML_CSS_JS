@@ -1,23 +1,18 @@
-
-.main
-{
-    background-color: antiquewhite;
-    height: 500px;
-    width: 100%;
-    display: table;
+.main {
+  background-color: antiquewhite;
+  height: 500px;
+  width: 100%;
+  display: table;
 }
-.box
-{
+.box {
   height: 100px;
   width: 48%;
   background-color: red;
   border: 1px solid black;
 }
-.second
-{
-    visibility: hidden;
+.second {
+  visibility: hidden;
 }
-.third
-{
-    display: block;
+.third {
+  display: block;
 }

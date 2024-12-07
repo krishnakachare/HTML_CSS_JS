@@ -1,0 +1,5 @@
+Internet & Basics:
+   Internet is Network of Networks. 
+   www stands for world wide web is implemented by Tim Berner's Lee.
+   when we enter google.com(url) in browser, browser requests ISP(like jio,airtel), then it moves to DNS(Domain Name System), it will lead to server by IP address. server will respond and client recieves HTML,CSS,Js
+   Domain(.com,.in),URL(uniform resource locator), http vs https(SSL- secure socket layer certificate)
