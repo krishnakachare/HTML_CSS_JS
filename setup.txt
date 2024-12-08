@@ -1,7 +1,8 @@
+## Setup:
 Download & install code editor: VSC
 -----------------------------
 Extension: Prettier
-setting->setting
+setting-> setting
 Search --> Default formatter --> Editor:Default formmater --> Select Prettier - code formatter
 Search --> Format on save --> Check 
 Search --> Autosave --> Files: Auto save -> Select onFocusChange
