@@ -1,3 +1,35 @@
 All semantic elements are block elements.
 Eg: header,footer,main,address,section,article etc..,
 
+Semantic HTML Tags:
+Semantic HTML tags are used to give meaning to the structure of a web page. They convey the purpose or role
+of the elements to both browsers and developers. Using semantic tags improves accessibility, search engine
+optimization (SEO), and the overall structure of web content.
+
+1. <header>:
+The <header> element represents a container for introductory content or a set of navigational links.
+It typically contains the site logo, site title, and main navigation menu.
+
+2. <nav>:
+The <nav> element is used to define a section of navigation links.
+It often contains links to various parts of the website, such as the main menu or navigation bar.
+
+3. <main>:
+The <main> element is used to define the main content area of a document.
+It should be unique within the document and exclude content that is repeated, such as site headers or footers.
+
+4. <article>:
+The <article> element represents a self-contained composition within a document.
+It can include articles, blog posts, comments, or any content that can be independently distributed or syndicated.
+
+5. <section>:
+The <section> element is used to group related content within a document.
+It helps in organizing content and makes it more meaningful.
+
+6. <aside>:
+The <aside> element represents content that is tangentially related to the content around it.
+It is typically used for sidebars, pull quotes, or advertisements.
+
+7. <footer>:
+The <footer> element represents a container for the footer of a section or the entire page.
+It usually contains copyright information, contact details, or links to related documents.

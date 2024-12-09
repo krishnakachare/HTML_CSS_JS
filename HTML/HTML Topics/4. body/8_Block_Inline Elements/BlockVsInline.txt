@@ -1,0 +1,17 @@
+Block vs. Inline Elements:
+Block Elements:
+Block-level elements are used to create structural divisions or blocks in the content of a web page.
+They typically start on a new line and extend the full width of their parent container.
+Common block-level elements include <div>, <p>, <h1> to <h6>, <ul>, <ol>, <li>, <table>, <form>, and
+more.
+Example:
+<div>This is a block-level element.</div>
+<p>This is another block-level element.</p>
+<h1>This is a heading, which is also a block-level element.</h1>
+Inline Elements:
+Inline elements are used to style or wrap specific portions of text within a block-level element.
+They do not start on a new line and only occupy the space needed for their content.
+Common inline elements include <span>, <a>, <strong>, <em>, <abbr>, <img>, and more.
+Example:
+<p>This is a <em>portion of text</em> within a paragraph.</p>
+<span>This is an inline element.</span>

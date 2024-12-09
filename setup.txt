@@ -1,44 +1,100 @@
 ## Setup:
-Download & install code editor: VSC
------------------------------
-Extension: Prettier
-setting-> setting
-Search --> Default formatter --> Editor:Default formmater --> Select Prettier - code formatter
-Search --> Format on save --> Check 
-Search --> Autosave --> Files: Auto save -> Select onFocusChange
-Search --> Tab Size --> Editor: Tab Size -> 2
-----------------------------------
-Extension for color: one monokai
-----------------------------------
-Create & add code folder in VSC
+# Download & install code editor: VSC, git, node
 
-================================
-## Git:
+# VSC Extensions: live server, Prettier, one monokai, image preview, Auto rename tag, material icon theme, color highlight, HTML CSS Support
+
+# Google chrome Extensions: wappalyzer
+
+# VSC setting:
+    setting-> setting
+    Search --> Default formatter --> Editor:Default formmater --> Select Prettier - code formatter
+    Search --> Format on save --> Check 
+    Search --> Autosave --> Files: Auto save -> Select onFocusChange
+    Search --> Tab Size --> Editor: Tab Size -> 2
+
+# Create & add code folder in VSC
+
+======================================================================
+## Usefull websites:
+JavaScript:
+    https://javascript.info/
+    https://www.jsv9000.app/
+    https://v8.dev/blog
+    https://jsbin.com/repuxipuhi/edit?js,console,output
+    https://plainenglish.io/blog/50-javascript-output-questions
+
+Code practice & resources:
+    https://codepen.io/
+    https://www.freecodecamp.org/
+    https://developer.mozilla.org/en-US/docs/Web
+    https://editorconfig.org/
+    https://web.dev/learn/css/
+    https://html.com/
+
+HTML Code generator:
+    https://www.html-code-generator.com/
+
+CSS:
+    https://www.cssportal.com/
+    https://www.blobmaker.app/
+    https://getwaves.io/
+    https://css-tricks.com/
+
+All types of icons:
+    https://fonts.google.com/
+    https://fontawesome.com/
+    https://icons8.com/
+    https://lordicon.com/
+
+bootstrap:
+    https://getbootstrap.com/
+
+Images:
+    https://www.freepik.com/
+    https://unsplash.com/
+Image generator:
+    https://www.bing.com/images/create
+
+Video:
+    https://www.youtube.com/
+    https://vimeo.com/
+    https://www.dailymotion.com/in
+    https://www.twitch.tv/
+
+AI:
+    https://chatgpt.com/
+    https://copilot.microsoft.com/
+    https://gemini.google.com/
+
+Dummy Email: 
+    https://temp-mail.org/en/
+
+Account:
+    https://dev.to/
+Blog:
+    https://hashnode.com/
+
+use online VSC:
+    https://vscode.dev/
+open github repo in VSC online: open git repo & press '.' from the virtual keyboard
+
+Host the project from the github:
+
+
+
+====================================================================
+## Git Basic:
 First download and install Git and verify it by "git -v"
 Second goto github.com and create an account by signup. create a repository also
-1. In vscode left side--> accounts ->sign in--> choose github and it will open browser and github login screen , enter username,password--> login-->authorize-->it will redirect to vscode
+    1. In vscode left side--> accounts ->sign in--> choose github and it will open browser and github login screen , enter username,password--> login-->authorize-->it will redirect to vscode
 
-Actual Process:
-open terminal---> new terminal--> goto specific folder
-1. git init  - it will initiate git into your folder
-2. git add . -- it will add all the files into git 
-3. git commit -m "update" - it will commit your git and added a message update
+    1. git init  - it will initiate git into your folder
+    2. git add . -- it will add all the files into git 
+    3. git commit -m "update" - it will commit your git and added a message update
 
-First time you may end up git config errors.like this.
-
-git config --global user.email "you@example.com"
-git config --global user.name "Your Name"
-
-to set your account's default identity.
-Omit --global to set the identity only in this repository.
-
-fatal: unable to auto-detect email address (got 'Lenovo@SERVER.(none)')  
-
- to solve it do following commands
-
-git config --global user.email "your email id"
-git config --global user.name "username"
+    git config --global user.email "your email id"
+    git config --global user.name "username"
 
 After this try git add . and git commit -m "update" again.
-4. git remote add origin "link"
-5. git push -u origin main
+    4. git remote add origin "link"
+    5. git push -u origin main
