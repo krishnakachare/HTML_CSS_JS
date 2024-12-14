@@ -1,0 +1,163 @@
+Head Section:
+    <base> target
+    <meta>
+    <title>
+    link:favicon
+    link:css
+    <style>
+    <script>
+
+=============
+Body Section:
+    <h1> to <h6>
+    <p>
+    Text formatting tags:
+        <strong></strong>
+        <b></b>
+        <em></em>
+        <i></i>
+        <u></u>
+        <del></del>
+        <ins></ins>
+        <mark></mark>
+        <sup></sup>
+        <sub></sub>
+        <small></small>
+        <big></big>
+
+------------------------------------------
+        HTML computer code:
+            <kbd></kbd>
+            <code></code>
+            <samp></samp>
+            <var></var>
+            <pre></pre>
+
+------------------------------------------------------
+        HTML citations, Quotations & Definition tags:
+            <cite></cite>        like i,em
+            <address></address>
+            <abbr></abbr> title  abbreviation
+            <q></q>
+            <bdo dir="rtl"></bdo> Bi-Directional Override.
+            <blockquote cite=""></blockquote>
+-----------------------------------------
+
+    <br>
+    <hr> 
+
+    <img>
+    <picture>
+    imageMap
+        <img>
+        <map>
+
+    attributes, use, examples
+        attributes: class vs id, title, target, controls, type, height, width, style, step, start, src,alt, selected, required, href, rel, readonly, placeholder, disabled
+
+    CSS selectors:
+
+    HTML File Path: for webpages, html pages, images, css, js
+     1. Absolute
+     2. Relative
+
+    <a>
+        hyperlink
+        target="_blank"
+        mailto
+        tel       
+        hyperlink as image
+        page bookmark
+
+    <button> type disabled
+
+    <script>
+    script:src
+
+    <style>
+    link:css
+
+    ul>li        style="list-style-type:square;" or type
+    ol>li        start type reversed
+    nested list
+    dl>dt>dd
+   
+   <table>
+        <tr>
+        <th>
+        <td>  
+
+    Semantic elements: 
+        <form>,<table>,<header>, <nav>, <section>, <article>, <aside>, <footer>, <details>, <summary> 
+
+    Non-semantic elements: <div>, <span>
+
+    Block & Inline elements
+        <div> vs <span>
+
+-------------------------------
+    <details>
+    <figure>
+    <fig Caption>
+    <marquee> direction
+-------------------------------
+
+    HTML forms: <form>
+     <input>
+     <datalist>
+     <search>
+     <select>
+        <option>
+     <textarea>   
+     
+        <input type="button">
+        <input type="text"> (default value)
+        <input type="checkbox">
+        <input type="color">
+        <input type="date">
+        <input type="datetime-local">
+        <input type="email">
+        <input type="file">
+        <input type="hidden">
+        <input type="image">
+        <input type="month">
+        <input type="number">
+        <input type="password">
+        <input type="radio">
+        <input type="range">
+        <input type="reset">
+        <input type="search">
+        <input type="submit">
+        <input type="tel">         
+        <input type="time">
+        <input type="url">
+        <input type="week">
+
+        form validation:
+            readonly, disable, size, maxlength, max, min, step, multiple, pattern, placeholder, required, autofocus, autocomplete
+
+    media: 
+        video:
+            <video controle>
+                <source src="" type="">
+            </video>
+
+        audio: 
+            <audio controle>
+                <source src="" type="">
+            </audio>
+
+    HTML frames:
+        <frameset cols/rows>
+        <frame src>
+        Inline frame: 
+            <iframe>
+
+    HTML character entity: 
+        (&copy; © &Uuml; @),
+
+    HTML URL Encoding:
+        URL structure
+        http, https
+
+Responsive Design:

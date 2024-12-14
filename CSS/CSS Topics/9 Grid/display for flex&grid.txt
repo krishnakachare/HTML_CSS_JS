@@ -1,0 +1,5 @@
+CSS display for CSS Grid and Flexbox:
+
+CSS Grid (display: grid;) and Flexbox (display: flex;) are two modern layout systems introduced in CSS. They offer more advanced and flexible ways to create responsive layouts. When used, they affect the display behavior of their children:
+    In a CSS Grid container, the children become grid items.
+    In a Flexbox container, the children become flex items.

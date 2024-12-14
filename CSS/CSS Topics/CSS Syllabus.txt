@@ -99,3 +99,11 @@
 
 19. Practical Projects :
     - Building responsive web pages
+
+
+
+    text-align
+    colors
+    outline
+    pseudo elements
+    pseudo classes

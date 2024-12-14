@@ -6,6 +6,12 @@
     <style>
         /* This is an internal CSS block for demonstration purposes. */
 
+
+        /* none Display */
+        .none {
+            display: none;
+        }
+
         /* Block Display */
         .block {
             display: block;
@@ -36,8 +42,13 @@
 
 <body>
     <!-- This is a comment. It won't be displayed in the web page. -->
-
     <h1>CSS Display Property</h1>
+
+    <!-- none Display -->
+    <h2>display: none:</h2>
+    <div>
+        Lorem ipsum [<p class="none" style="color: red;">HELLO WORLD!</p>] Vestibulum volutpat.
+    </div>
 
     <!-- Block Display -->
     <h2>Block Display</h2>
@@ -61,11 +72,10 @@
 
     <!-- Inline-Block Display -->
     <h2>Inline-Block Display</h2>
-
+    <!-- Displays an element as an inline-level block container. The element itself is formatted as an inline element, but you can apply height and width values -->
     <span class="inline-block"></span>
     <span class="inline-block"></span>
     <!-- Inline-block elements are similar to inline elements but can have specified dimensions. -->
-
     <span class="inline-block"></span>
 </body>
 

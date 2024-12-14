@@ -1,0 +1,10 @@
+Background Styling CSS Properties:
+
+CSS properties related to background styling allow you to control the appearance of an element's background:
+
+    background-color: Sets the background color of an element.
+    background-image: Specifies an image to be used as the background.
+    background-repeat: Defines how the background image should repeat (e.g., repeat, no-repeat, repeat-x, repeat-y).
+    background-size: Sets the size of the background image (e.g., cover, contain, specific dimensions).
+    background-position: Positions the background image within the element (e.g., center, top right, specific coordinates).
+    background-attachment: Determines whether the background image scrolls with the content or remains fixed.

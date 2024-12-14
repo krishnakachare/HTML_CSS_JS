@@ -1,0 +1,13 @@
+Text Styling CSS Properties:
+
+CSS provides several properties for styling text within HTML elements:
+    font-family: Specifies the font family to be used for text.
+    font-size: Sets the size of the font.
+    font-weight: Defines the thickness or boldness of the font.
+    font-style: Specifies whether the font is italic, oblique, or normal.
+    
+    text-align: Sets the horizontal alignment of text (e.g., left, right, center, justify).
+    line-height: Controls the spacing between lines of text.
+    color: Sets the text color.
+    text-decoration: Adds decorative styles to text (e.g., underline, overline, line-through).
+    text-transform: Transforms the text to uppercase, lowercase, or capitalize the first letter.

@@ -1,0 +1,45 @@
+HTML + CSS:
+ 1. inline css
+ 2. internal css
+ 3. external css
+
+inheritance
+! important
+
+css selctors:
+    Type of css selectors:
+        1. css element selector
+        2. css class selector
+        3. css id selector
+        4. css universal selector
+        5. css group selector
+
+
+
+*  01 | Font
+*  02 | Text
+*  03 | Background
+*  04 | Border
+*  05 | Box Model
+*  06 | Colors
+*  07 | Template Layout
+*  08 | Table
+*  09 | Columns
+*  10 | List & Markers
+*  11 | Animations
+*  12 | Transitions
+*  13 | CSS Flexbox (Important)
+*        - Parent Properties (flex container)
+*        - Child Properties (flex items)
+*  14 | CSS Grid (Useful in Complex Web Designs)
+*        - Parent Properties (Grid container)
+*        - Child Properties (Grid items)
+*  15 | Media Queries
+
+
+
+
+Responsive Web Design:
+
+CSS Frameworks:
+    - Bootstrap, Tailwind CSS
