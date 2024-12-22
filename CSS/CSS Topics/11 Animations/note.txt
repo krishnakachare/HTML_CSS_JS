@@ -1,0 +1,54 @@
+CSS Animations:
+CSS animations allow you to create more complex and dynamic animations. You can define keyframes with specific properties and values to control the animation's behaviour.
+
+Key Concepts:
+
+Keyframes: Keyframes are defined animation stages with specific property values.
+Use the @keyframes rule to create keyframes with different percentages.
+Example:
+@keyframes slide-in {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+Animation Property:
+The animation property is used to apply an animation to an element.
+You specify the animation name, duration, timing function, delay, iteration count, direction, and fill mode.
+
+animation: name duration timing-function delay iteration-count direction fill-mode;
+
+Animation Duration:
+The duration property sets the length of the animation in seconds (s) or milliseconds (ms).
+
+Example: animation: slide-in 1s ease;
+
+Iteration Count:
+Specifies how many times the animation should repeat.
+Common values include infinite, 1, 2, etc.
+
+Direction:
+Defines whether the animation should play forwards (normal), backwards (reverse), or alternate (alternate) between forwards and backwards.
+
+Fill Mode:
+Determines what styles should be applied before and after the animation.
+Common values include forwards, backwards, both, and none.
+
+Animation Example:
+
+/* Define a keyframe animation */
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* Apply the animation to an element */
+#animated-element {
+  animation: fade-in 1s ease-in-out 0.2s infinite alternate;
+}

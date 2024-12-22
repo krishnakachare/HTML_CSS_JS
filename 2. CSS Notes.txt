@@ -1,20 +1,52 @@
+Type of css selectors:
+    1. css attribute/element selector
+    2. css class selector
+    3. css id selector
+        nth of type selector: nth-of-type(ind)
+        descendant selector: > or space
+        adjacent selector: +
+    4. css universal selector: *
+    5. css group selector(,)
+        css combinators(space, >, +, ~)
+
 HTML + CSS:
  1. inline css
  2. internal css
  3. external css
 
-inheritance
-! important
+    inheritance
+    specificity
+    ! important
 
-css selctors:
-    Type of css selectors:
-        1. css element selector
-        2. css class selector
-        3. css id selector
-        4. css universal selector
-        5. css group selector
+PSUEDO-ELEMENTS
+    CSS Pseudo-classes:
+    CSS Pseudo-selectors:
 
+Color theory
+color
 
+css units
+
+position
+
+display
+
+flex
+
+grid
+
+CSS display for CSS Grid and Flexbox
+
+CSS Flexbox (Flexible Box Layout):
+
+Flex Container:
+Flex Items
+Main Axis and Cross Axis:
+Flex Container Properties:
+CSS Grid Layout:
+
+z index
+css functions
 
 *  01 | Font
 *  02 | Text
@@ -28,6 +60,7 @@ css selctors:
 *  10 | List & Markers
 *  11 | Animations
 *  12 | Transitions
+         Transform
 *  13 | CSS Flexbox (Important)
 *        - Parent Properties (flex container)
 *        - Child Properties (flex items)
@@ -35,8 +68,6 @@ css selctors:
 *        - Parent Properties (Grid container)
 *        - Child Properties (Grid items)
 *  15 | Media Queries
-
-
 
 
 Responsive Web Design:

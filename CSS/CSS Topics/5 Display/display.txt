@@ -1,0 +1,56 @@
+CSS display Property:
+The display property in CSS determines how an HTML element is visually rendered in the layout of a web page. It defines the type of box an element generates, affecting its behavior and positioning. The display property can take various values, each with its own characteristics.
+
+Common display Values:
+
+block:
+Elements with display: block; generate a block-level box.
+Block-level elements start on a new line and take up the full width of their parent container.
+Examples include <div>, <p>, <h1>, and <form>.
+
+inline:
+Elements with display: inline; generate an inline-level box.
+Inline-level elements do not start on a new line and only take up as much width as necessary.
+Examples include <span>, <a>, <strong>, and <em>.
+
+inline-block:
+Combines aspects of both block and inline elements.
+Inline-block elements do not start on a new line and can have a specific width and height.
+Useful for creating inline elements with block-level styling.
+
+none:
+Elements with display: none; are not rendered on the page.
+They are effectively invisible and do not occupy space in the layout.
+Useful for hiding elements dynamically using JavaScript.
+
+flex:
+Introduced with CSS Flexbox.
+Allows elements to be flexible in their size and layout within a container.
+Excellent for creating responsive and flexible layouts.
+
+grid:
+Introduced with CSS Grid Layout.
+Defines a grid container and its items, enabling complex two-dimensional layouts.
+Powerful for creating grid-based designs.
+table, table-row, table-cell, etc.:
+These values generate elements that mimic the behavior of table elements in HTML.
+Useful for creating table-like layouts when actual HTML tables are not suitable.
+
+Additional display Values:
+
+list-item:
+Renders an element as a list item.
+Typically used with <li> elements within ordered or unordered lists.
+
+inline-table:
+Combines aspects of both inline and table elements.
+Useful for displaying tables inline with other content.
+
+inherit:
+Inherits the display property value from the parent element.
+Allows elements to inherit display behavior.
+
+CSS display for CSS Grid and Flexbox:
+CSS Grid (display: grid;) and Flexbox (display: flex;) are two modern layout systems introduced in CSS. They offer more advanced and flexible ways to create responsive layouts. When used, they affect the display behavior of their children:
+In a CSS Grid container, the children become grid items.
+In a Flexbox container, the children become flex items.

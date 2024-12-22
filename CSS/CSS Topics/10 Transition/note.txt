@@ -1,0 +1,36 @@
+CSS Transitions: 
+CSS transitions allow you to smoothly change the property values of an element over time. They provide a smooth and gradual change between different states, such as when hovering over a button or fading in an image.
+
+Key Concepts:
+
+Transition Property: To create a transition, you specify the CSS properties that should change smoothly using the transition property.
+
+Example: transition: property duration timing-function delay;
+
+Transition Duration: The duration property defines how long the transition should take to complete.
+It's specified in seconds (s) or milliseconds (ms).
+
+Example: transition: opacity 0.5s;
+
+Timing Function: The timing-function property defines the speed curve of the transition.
+Common values include ease, linear, ease-in, ease-out, and ease-in-out.
+
+Transition Delay: The delay property specifies a delay before the transition starts.
+Useful for creating delayed animations.
+
+Example: transition: opacity 0.5s ease 0.2s;
+
+Shorthand: You can use the shorthand transition property to specify all transition settings at once.
+
+Example: transition: property duration timing-function delay;
+
+Transition Example:
+/* Apply a transition to the opacity property */
+button {
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+/* Change opacity on hover */
+button:hover {
+  opacity: 1;
+}

@@ -1,0 +1,46 @@
+CSS Selectors:
+CSS selectors are used to target HTML elements to apply styles. There are various types of selectors:
+1. Type Selector:
+The type selector selects elements by their HTML tag name.
+It targets all elements of the specified type.
+Example:
+p {
+    color: red;
+}
+2. Class Selector:
+The class selector selects elements with a specific class attribute.
+It starts with a dot (.) followed by the class name.
+Example:
+.button {
+    background-color: #008CBA;
+    color: white;
+}
+3. ID Selector:
+The ID selector selects a single element with a specific ID attribute.
+It starts with a hash (#) followed by the ID name.
+Example:
+#header {
+    font-size: 36px;
+    text-align: center;
+}
+4. Descendant Selector:
+The descendant selector selects an element that is a descendant of another element.
+It is used to target elements within a specific context.
+Example:
+ul li {
+    list-style-type: square;
+}
+5. Child Selector:
+The child selector selects an element that is a direct child of another element.
+It uses the greater-than sign (>).
+Example:
+ul > li {
+    font-weight: bold;
+}
+6. Attribute Selector:
+The attribute selector selects elements with a specific attribute and value.
+It is enclosed in square brackets.
+Example:
+input[type="text"] {
+    border: 1px solid #ccc;
+}

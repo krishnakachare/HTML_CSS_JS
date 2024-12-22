@@ -1,0 +1,23 @@
+CSS Pseudo-selectors:
+
+    Pseudo-selectors allow you to select specific parts of an element's content or attributes.
+    
+        1. ::before and ::after:
+            Used to insert content before and after the content of an element.
+            Content is specified using the content property.
+            Useful for adding decorative elements or labels.
+        2. ::first-line:
+            Targets the first line of text within an element.
+            Allows you to style the initial text line differently.
+            Commonly used for adjusting text styles for headings or paragraphs.
+        3. ::first-letter:
+            Targets the first letter of text within an element.
+            Used to apply distinct styles to the initial letter.
+            Often used for decorative drop caps or special styling.
+        4. ::selection:
+            Targets the portion of text that the user selects with the cursor.
+            Allows you to style the selected text.
+            Limited browser support for certain properties like background-color and color.
+        5. ::placeholder:
+            Selects the placeholder text within input and textarea elements.
+            Used to style the text that provides hints or instructions within form fields.

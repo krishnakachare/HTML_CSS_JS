@@ -1,0 +1,34 @@
+CSS Pseudo-classes:
+
+    Pseudo-classes are used to select and style elements based on their special states or positions in relation to other elements.
+    
+        1. :hover:
+            Targets an element when the mouse pointer is over it.
+            Commonly used for links and interactive elements to provide hover effects.
+        2. :active:
+            Targets an element when it is being activated (e.g., clicked).
+            Useful for styling buttons and interactive elements during the click action.
+        3. :focus:
+            Targets an element when it gains focus, such as through keyboard navigation or clicking.
+            Typically used for form elements to indicate user interaction.
+        4. :visited:
+            Targets links that have been visited by the user.
+            Allows for styling visited links differently from unvisited ones.
+            Note: Some styling restrictions apply for security reasons.
+        5. :nth-child(n):
+            Selects elements based on their position within a parent element.
+            n can be a number or a formula (e.g., 2n for even elements).
+            Useful for styling alternating rows in tables or specific items in a list.
+        6. :nth-of-type(n):
+            Similar to :nth-child(), but selects elements of a specific type (e.g., p:nth-of-type(odd)).
+            Useful for targeting specific types of elements within a container.
+        7. :not(selector):
+            Selects elements that do not match the given selector.
+            Useful for excluding specific elements from styling rules.
+            Example: p:not(.special) selects all paragraphs except those with the class "special."
+        8. :first-child and :last-child:
+            Select the first and last child elements of a parent element, respectively.
+            Helpful for styling elements at the beginning or end of a container.
+        9. :only-child:
+            Targets elements that are the only child of their parent.
+            Useful for styling elements that are unique within a container.

@@ -1,0 +1,26 @@
+Media Queries:
+Media Queries are a fundamental part of responsive web design. They allow you to apply different styles and layouts to your web pages based on various device characteristics such as screen size, resolution, and orientation.
+
+Key Concepts:
+@media Rule:
+Media Queries are defined using the @media rule in CSS.
+They start with @media followed by specific conditions.
+
+Example: @media screen and (max-width: 768px) { /* Styles for screens <= 768px */ }
+
+Media Types:
+Media Queries can target different media types such as screen, print, all, speech, etc.
+The screen type is commonly used for web pages.
+
+Media Features:
+Media Queries use media features like width, height, orientation, resolution, and more to target specific device characteristics.
+
+Example: (max-width: 768px) targets screens with a maximum width of 768 pixels.
+
+Logical Operators:
+You can use logical operators like and, not, and only to combine media features.
+Example: @media screen and (min-width: 768px) and (max-width: 1024px) { /* Styles for tablets */ }
+
+Breakpoints:
+Breakpoints are specific screen widths at which your layout and styles change.
+Common breakpoints include mobile (320px - 767px), tablet (768px - 1023px), and desktop (1024px and above).

@@ -11,3 +11,6 @@ CSS provides several properties for styling text within HTML elements:
     color: Sets the text color.
     text-decoration: Adds decorative styles to text (e.g., underline, overline, line-through).
     text-transform: Transforms the text to uppercase, lowercase, or capitalize the first letter.
+
+
+
