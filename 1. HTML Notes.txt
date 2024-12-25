@@ -161,3 +161,7 @@ Body Section:
         http, https
 
 Responsive Design:
+
+
+
+html code check: HTML validator, diffchecker

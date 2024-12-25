@@ -1,9 +1,0 @@
-   Basic Linux: cd-- change directory
-   cd folder-name---> it will make control forward to another folder
-   cd..---> it will make control back to previos folder
-   ls-->list of all
-   mkdir-->create a directory
-   rmdir--->remobes the directory
-   code Editor:Visual studio code
-   extensions(live server,prettier)
-   autosave+wordwrap

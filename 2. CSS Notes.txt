@@ -28,6 +28,7 @@ color
 css units
 
 position
+overflow
 
 display
 
@@ -52,7 +53,7 @@ css functions
 *  02 | Text
 *  03 | Background
 *  04 | Border
-*  05 | Box Model
+*  05 | Box Model   outline
 *  06 | Colors
 *  07 | Template Layout
 *  08 | Table

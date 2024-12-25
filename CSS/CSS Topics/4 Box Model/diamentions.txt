@@ -1,0 +1,24 @@
+Example:
+Let's say we have a <div> element with a width of 200px, padding of 20px, border of 2px, and margin of 10px. The total width of the box will be calculated as follows:
+
+    Width Calculation:
+        Total width = width + (left padding) + (right padding) + (left border) + (right border) + (left margin) + (right margin)
+        Total width = 200px + (20px * 2) + (2px * 2) + (10px * 2)
+        Total width = 200px + 40px + 4px + 20px
+        Total width = 264px
+        
+        Similarly, the total height will be calculated considering the height, padding, border, and margin in a similar manner.
+
+To avoid this make width height constant, we use, box-sizing:border-box;
+
+
+Final element width = left border + left padding + width + right padding + right border
+Final element height = top border + top padding + height + bottom padding + bottom border
+
+Inline element: horizontal distance in bt elements
+        Total margin = ele1 right side margin + ele2 left side margin
+        
+Block element: vertical distance in bt elements
+
+Margins collapse when adjacent elements have margins that overlap. If both elements have the same margin, the shared margin between them will equal that margin size. If the elements have different margins, the larger margin will take precedence as the distance between the elements.  
+        Total margin = ele1 bottom side margin = ele2 top side margin

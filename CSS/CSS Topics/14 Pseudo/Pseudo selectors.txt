@@ -1,7 +1,10 @@
-CSS Pseudo-selectors:
+CSS Pseudo-selectors or elements:
 
     Pseudo-selectors allow you to select specific parts of an element's content or attributes.
-    
+    Syntax:
+            selector::pseudo-element {
+                            property: value;
+                        }
         1. ::before and ::after:
             Used to insert content before and after the content of an element.
             Content is specified using the content property.
@@ -21,3 +24,5 @@ CSS Pseudo-selectors:
         5. ::placeholder:
             Selects the placeholder text within input and textarea elements.
             Used to style the text that provides hints or instructions within form fields.
+
+::first-line,::first-letter pseudo-element can only be applied to block-level elements.

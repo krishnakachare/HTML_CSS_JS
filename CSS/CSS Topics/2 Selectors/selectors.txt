@@ -1,60 +1,67 @@
-selectors is a way to select an element into css styles.
-you can select an element using tagname,classname,id  generally. there are several other ways to select an element.
-syntax:
-selectors
-{
- property-name:value;
-}
-//tagname
-h1
-{
-     property-name:value;
-}
-//classname
-.classname
-{
-     property-name:value;
-}
-//idname
-#id
-{
-     property-name:value;
-}
-//descendent
-div p  ---> this means p tag inside family of div
-{
-     property-name:value;
-}
-div>p   ---> this applicable to p who is immediate child of div
-{
-     property-name:value;
-}
-//attribute/property
-input[type="text"]
-{
-     property-name:value;
-}
+CSS Selectors:
+     CSS selectors are used to target HTML elements to apply styles. There are various types of selectors: css style syntax: selectors{
+                                        property-name:value;
+                                   }
 
-/* pseudo selectors  -- all pseudo selectors starts with : */
-/*link pseudo selectors*/
-a:link---> anchor tag which is a link 
-a:active --->  anchor tag when you click
-a:visited --> anchor tag which is already opened
-/* input psudo selectors */
-input:required --> select inputs who have required flag
-input:optional --> select all inputs who don't have any required flag
-input:read-only ---> select all inputs who have readonly flag
-input:read-write ---> select all inputs who don't have any readonly flag
-input:disabled ---> select all inputs who have disabled flag
-input:enabled ---> select all inputs who don't have disabled flag
-input:hidden --> select hidden input elements
+# We can divide CSS selectors into five categories:
+    1. Simple selectors (select elements based on name, id, class)
+    2. Combinator selectors (select elements based on a specific relationship between them)
+    3. Pseudo-class selectors (select elements based on a certain state)
+    4. Pseudo-elements selectors (select and style a part of an element)
+    5. Attribute selectors (select elements based on an attribute or attribute value)
+    6. Universal selector(*)
+----------------------------------------------------------------------
 
-div:empty --> select all divs who are empty
+1. Simple selectors (select elements based on name, id, class)
+    1. Type Selector:
+        The type selector selects elements by their HTML tag name.
+        It targets all elements of the specified type.
+        Example:
+                p {
+                    color: red;
+                }
+    2. Class Selector:
+        The class selector selects elements with a specific class attribute.
+        It starts with a dot (.) followed by the class name.
+        Example:
+                .button {
+                    background-color: #008CBA;
+                    color: white;
+                }
+    3. ID Selector:
+        The ID selector selects a single element with a specific ID attribute.
+        It starts with a hash (#) followed by the ID name.
+        Example:
+                #header {
+                    font-size: 36px;
+                    text-align: center;
+                }
+    4. Descendant Selector:
+        The descendant selector selects an element that is a descendant of another element.
+        It is used to target elements within a specific context.
+        Example:
+                ul li {
+                    list-style-type: square;
+                }
+    5. Child Selector:
+        The child selector selects an element that is a direct child of another element.
+        It uses the greater-than sign (>).
+        Example:
+                ul > li {
+                    font-weight: bold;
+                }
+    6. Attribute Selector:
+        The attribute selector selects elements with a specific attribute and value.
+        It is enclosed in square brackets.
+        Example:
+                input[type="text"] {
+                    border: 1px solid #ccc;
+                }
 
-div:nth-child(1) --> select div who is first child of their parent
-div:nth-of-type(1) --> select div who is first div for their parent
-div:nth-last-child(1) --> select div who is first child from last of their parent
-div:nth-lat-type-of-child(1) --> select div who is first child of div type from last of their parent
-*** you can always use "even" or "odd" for above selectors
-
-*----> root selector
+---------------------------------------------------------------------------------------------
+2. Combinator selectors (select elements based on a specific relationship between them)
+     There are four different combinators in CSS:
+          1. Descendant combinator (space)
+          2. Child combinator (>)
+          3. Next sibling combinator (+)
+          4. Subsequent-sibling combinator (~)

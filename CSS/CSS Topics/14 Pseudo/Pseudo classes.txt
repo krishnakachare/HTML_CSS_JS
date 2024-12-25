@@ -1,6 +1,13 @@
 CSS Pseudo-classes:
 
     Pseudo-classes are used to select and style elements based on their special states or positions in relation to other elements.
+
+    pseudo selectors  -- all pseudo selectors starts with : 
+
+    Syntax: 
+    selector:pseudo-class {
+                property: value;
+             }
     
         1. :hover:
             Targets an element when the mouse pointer is over it.
@@ -32,3 +39,31 @@ CSS Pseudo-classes:
         9. :only-child:
             Targets elements that are the only child of their parent.
             Useful for styling elements that are unique within a container.
+
+:enabled 
+:disabled 
+:checked
+:required
+:optional
+
+
+link pseudo selectors :
+    a:link---> anchor tag which is a link 
+    a:active --->  anchor tag when you click
+    a:visited --> anchor tag which is already opened
+
+input psudo selectors :
+    input:required --> select inputs who have required flag
+    input:optional --> select all inputs who don't have any required flag
+    input:read-only ---> select all inputs who have readonly flag
+    input:read-write ---> select all inputs who don't have any readonly flag
+    input:disabled ---> select all inputs who have disabled flag
+    input:enabled ---> select all inputs who don't have disabled flag
+    input:hidden --> select hidden input elements
+
+    div:empty --> select all divs who are empty
+    div:nth-child(1) --> select div who is first child of their parent
+    div:nth-of-type(1) --> select div who is first div for their parent
+    div:nth-last-child(1) --> select div who is first child from last of their parent
+    div:nth-lat-type-of-child(1) --> select div who is first child of div type from last of their parent
+
