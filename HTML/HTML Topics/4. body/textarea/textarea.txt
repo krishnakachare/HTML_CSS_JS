@@ -1,0 +1,7 @@
+The <textarea> element defines a multi-line input field (a text area):
+    The rows attribute specifies the visible number of lines in a text area.
+    The cols attribute specifies the visible width of a text area.
+
+        <textarea name="message" rows="10" cols="30" style="width:200px; height:600px;" placeholder="Write Here...">
+            The cat was playing in the garden.
+        </textarea>

@@ -1,0 +1,50 @@
+form:
+    The input form attribute specifies the form the <input> element belongs to.
+    The value of this attribute must be equal to the id attribute of the <form> element it belongs to.
+                <form action="/action_page.php" id="form1">
+                    <label for="fname">First name:</label>
+                    <input type="text" id="fname" name="fname"><br><br>
+                    <input type="submit" value="Submit">
+                </form>
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname" form="form1">
+
+formaction:
+    The input formaction attribute specifies the URL of the file that will process the input when the form is submitted.
+    This attribute overrides the action attribute of the <form> element.
+    The formaction attribute works with the following input types: submit and image.
+
+                    <form action="/action_page.php">
+                        <label for="fname">First name:</label>
+                        <input type="text" id="fname" name="fname"><br><br>
+                        <label for="lname">Last name:</label>
+                        <input type="text" id="lname" name="lname"><br><br>
+                        <input type="submit" value="Submit">
+                        <input type="submit" formaction="/action_page2.php" value="Submit as Admin">
+                    </form>
+
+formmethod:
+    The input formmethod attribute defines the HTTP method for sending form-data to the action URL.
+    This attribute overrides the method attribute of the <form> element.
+    The formmethod attribute works with the following input types: submit and image.
+    The form-data can be sent as URL variables (method="get") or as an HTTP post transaction (method="post").
+
+    Notes on the "get" method:
+        This method appends the form-data to the URL in name/value pairs
+        This method is useful for form submissions where a user want to bookmark the result
+        There is a limit to how much data you can place in a URL (varies between browsers), therefore, you cannot be sure that all of the form-data will be correctly transferred
+        Never use the "get" method to pass sensitive information! (password or other sensitive information will be visible in the browser's address bar)
+
+    Notes on the "post" method:
+        This method sends the form-data as an HTTP post transaction
+        Form submissions with the "post" method cannot be bookmarked
+        The "post" method is more robust and secure than "get", and "post" does not have size limitations
+
+                <form action="/action_page.php" method="get">
+                    <label for="fname">First name:</label>
+                    <input type="text" id="fname" name="fname"><br><br>
+                    <label for="lname">Last name:</label>
+                    <input type="text" id="lname" name="lname"><br><br>
+                    <input type="submit" value="Submit using GET">
+                    <input type="submit" formmethod="post" value="Submit using POST">
+                </form>

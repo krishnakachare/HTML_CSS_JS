@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>&lt;input&gt;</title>
+    <style>
+        * {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <label for="textInput">Text Box: </label><br>
+        <input type="text" id="textInput" required placeholder="hi"><br>
+
+        <label>Text Box:
+            <input type="text">
+        </label><br>
+
+        <!-- You can also set restrictions on what numbers are accepted. -->
+        <label>Enter Number:
+            <input type="number">
+        </label><br>
+
+        <label>Enter Password:
+            <input type="password">
+        </label><br>
+
+        <label>Check Box:
+            <input type="checkbox">
+        </label><br>
+
+        <label>Radio Button:
+            <input type="radio">
+        </label><br>
+
+        <label>Range:
+            <input type="range">
+        </label><br>
+
+        <label>Button:
+            <input type="button" value="Button">
+        </label><br>
+
+        <!-- Reset button that will reset all form values to their default(value attr value) values -->
+        <label>Reset Buttom:
+            <input type="reset">
+        </label><br>
+
+        <!-- for submitting form data to a form-handler. -->
+        <label>Submit Buttom:
+            <input type="submit">
+        </label><br>
+
+        <label>Select Date:
+            <input type="date">
+        </label><br>
+
+        <label>Select Time:
+            <input type="time">
+        </label><br>
+
+        <label>Upload file:
+            <input type="file">
+        </label><br>
+
+        <label>Email:
+            <input type="email">
+        </label><br>
+
+        <label>Select Color:
+            <input type="color">
+        </label><br>
+
+        <!-- An image as a submit button. -->
+        <label>image input:
+            <input type="image" src="../../../../html-definition.png" alt="image input" width="100px" height="100px">
+        </label><br>
+
+        <label>Search Here:
+            <input type="search">
+        </label><br>
+
+        <label for="phone">Mob Number:</label><br>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br>
+
+        <label>URL:
+            <input type="url" name="homepage">
+        </label><br>
+    </form>
+</body>
+
+</html>

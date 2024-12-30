@@ -1,18 +1,28 @@
 CSS Selectors:
-     CSS selectors are used to target HTML elements to apply styles. There are various types of selectors: css style syntax: selectors{
-                                        property-name:value;
-                                   }
+     CSS selectors are used to target HTML elements to apply styles. 
+     syntax: selectors{
+                        property-name:value;
+                    }
 
-# We can divide CSS selectors into five categories:
-    1. Simple selectors (select elements based on name, id, class)
-    2. Combinator selectors (select elements based on a specific relationship between them)
-    3. Pseudo-class selectors (select elements based on a certain state)
-    4. Pseudo-elements selectors (select and style a part of an element)
-    5. Attribute selectors (select elements based on an attribute or attribute value)
-    6. Universal selector(*)
+# Type of CSS selectors:
+    1. Attribute selectors (select elements based on an attribute or attribute value)
+    2. Simple selectors (select elements based on tagname, id, class)
+    3. Combinator selectors (select elements based on a specific relationship between them)
+    4. Universal selector(*)
+    5. Pseudo-class selectors (select elements based on a certain state)
+    6. Pseudo-elements selectors (select and style a part of an element)
+    
 ----------------------------------------------------------------------
+1. Attribute Selector:
+        The attribute selector selects elements with a specific attribute and value.
+        It is enclosed in square brackets.
+        Example:
+                input[type="text"] {
+                    border: 1px solid #ccc;
+                }
 
-1. Simple selectors (select elements based on name, id, class)
+---------------------------------------------------------------------------------------------
+2. Simple selectors (select elements based on name, id, class)
     1. Type Selector:
         The type selector selects elements by their HTML tag name.
         It targets all elements of the specified type.
@@ -36,32 +46,40 @@ CSS Selectors:
                     font-size: 36px;
                     text-align: center;
                 }
-    4. Descendant Selector:
-        The descendant selector selects an element that is a descendant of another element.
-        It is used to target elements within a specific context.
-        Example:
-                ul li {
-                    list-style-type: square;
-                }
-    5. Child Selector:
-        The child selector selects an element that is a direct child of another element.
-        It uses the greater-than sign (>).
-        Example:
-                ul > li {
-                    font-weight: bold;
-                }
-    6. Attribute Selector:
-        The attribute selector selects elements with a specific attribute and value.
-        It is enclosed in square brackets.
-        Example:
-                input[type="text"] {
-                    border: 1px solid #ccc;
-                }
 
----------------------------------------------------------------------------------------------
-2. Combinator selectors (select elements based on a specific relationship between them)
-     There are four different combinators in CSS:
-          1. Descendant combinator (space)
-          2. Child combinator (>)
-          3. Next sibling combinator (+)
-          4. Subsequent-sibling combinator (~)
+---------------------------------------------------------------------------------------------        
+3. Combinator selectors (select elements based on a specific relationship between them)
+    1. Descendant combinator (space)
+    2. Child combinator (>)
+    3. Next sibling combinator (+)
+    4. Subsequent-sibling combinator (~)
+
+1. Descendant combinator(space):
+    The descendant selector selects an element that is a descendant of another element.
+    It is used to target elements within a specific context.
+    Example:
+            ul li {
+                list-style-type: square;
+            }
+
+2. Child combinator(>):
+    The child selector selects an element that is a direct child of another element.
+    It uses the greater-than sign (>).
+    Example:
+            ul > li {
+                font-weight: bold;
+                    }
+
+3. Next sibling combinator(+):
+    select all <p> elements that are immediately(just next) preceded by a <h1> element.
+    Example:
+            h1 + p {
+                color: red;
+                    }
+
+3. Subsequent-sibling combinator (~):
+    To select all <p> elements that come anywhere after <h1> elements.
+    Example:
+            h1 ~ p {
+                color: red;
+                    }

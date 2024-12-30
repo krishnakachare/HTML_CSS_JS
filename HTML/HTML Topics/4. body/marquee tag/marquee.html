@@ -8,10 +8,25 @@
 </head>
 
 <body>
-    <marquee behavior="scroll" direction="up" scrollamount="1">Slow Scrolling</marquee>
+
+    <!-- The <marquee> tag in HTML is used to create a scrolling piece of text or an image. 
+    The HTML <marquee> element is deprecated and its use is strongly discouraged. If you must create the effect of scrolling text or continuous elements, consider using CSS animations with CSS transforms instead of <marquee> elements to smoothly animate content.  -->
+
+
+    <!-- <marquee behavior="scroll" direction="up" scrollamount="1">Slow Scrolling</marquee>
     <marquee behavior="scroll" direction="right" scrollamount="12">Little Fast Scrolling</marquee>
     <marquee behavior="scroll" direction="left" scrollamount="20">Fast Scrolling</marquee>
-    <marquee behavior="scroll" direction="right" scrollamount="50">Very Fast Scrolling</marquee>
+    <marquee behavior="scroll" direction="right" scrollamount="50">Very Fast Scrolling</marquee> -->
+
+
+    <marquee>This text will scroll from right to left</marquee>
+
+    <marquee direction="up">This text will scroll from bottom to top</marquee>
+
+    <marquee direction="down" width="250" height="200" behavior="alternate" style="border:solid">
+        <marquee behavior="alternate">This text will bounce</marquee>
+    </marquee>
+
 </body>
 
 </html>

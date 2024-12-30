@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML form fieldset</title>
+    <style>
+        * {
+            margin-bottom: 10px;
+        }
+
+        div {
+            width: 300px;
+            border: 2px solid;
+            padding: 50px;
+            margin: 100px 500px;
+            background-color: rgb(154, 233, 233);
+        }
+
+        /* Dedault values
+        legend {
+            display: block;
+            padding-left: 2px;
+            padding-right: 2px;
+            border: none;
+        } */
+    </style>
+</head>
+
+<body>
+    <div>
+        <!-- Default method is GET -->
+        <form action="abc.in" method="post">
+            <label>First Name:
+                <input type="text" required>
+            </label><br>
+            <label>DOB:
+                <input type="date">
+            </label><br>
+            <!-- 
+            The <fieldset> tag is used to group related elements in a form.
+                The <fieldset> tag draws a box around the related elements. -->
+            <fieldset>
+                <!-- Defines a caption for the <fieldset> element. -->
+                <legend>Select Gender</legend>
+                <label>Male:
+                    <input type="radio" name="radio">
+                </label><br>
+                <label>Female:
+                    <input type="radio" name="radio">
+                </label><br>
+            </fieldset>
+
+            <input type="submit">
+            <input type="reset">
+        </form>
+    </div>
+</body>
+
+</html>
