@@ -1,16 +1,45 @@
-Text Styling CSS Properties:
+# Text Styling CSS Properties:
+    Fonts are the way of your characters representation in site. 
 
-CSS provides several properties for styling text within HTML elements:
-    font-family: Specifies the font family to be used for text.
-    font-size: Sets the size of the font.
-    font-weight: Defines the thickness or boldness of the font.
-    font-style: Specifies whether the font is italic, oblique, or normal.
+    1. font-style: normal | italic | oblique;
+
+    2. font-variant: normal | small-caps; 
+        Specifies whether to display the text in a small-caps font.
+
+    3. font-weight: normal | bold | lighter | bolder | numeric values (100 to 900);
+        Defines the thickness or boldness of the font.
+     
+    4. font-size: Sets the size of the font.
+
+    5. line-height: Controls the spacing between lines of text.
+
+    6. font-family: Specifies the font family to be used for text.
+            Serif: Fonts with extra strokes at the end of each horizontal and vertical stroke
+            Sans serif: A popular font family that conveys simplicity and minimalism
+            Cursive: Fonts that mimic human handwriting by joining letters flowingly
+            Fantasy: Decorative fonts that can make block of text more playful, such as in games, books, and presentations
+            Monospace: Fonts with characters that are all the same width, making text look like a typewriter
+
+    # Shorthand ==>
+        font: font-style,font-variant,font-weight,font-size/line-height,font-family
+        p {
+            font: italic small-caps bold 16px/2 'Times New Roman', serif;
+        }
     
-    text-align: Sets the horizontal alignment of text (e.g., left, right, center, justify).
-    line-height: Controls the spacing between lines of text.
-    color: Sets the text color.
-    text-decoration: Adds decorative styles to text (e.g., underline, overline, line-through).
-    text-transform: Transforms the text to uppercase, lowercase, or capitalize the first letter.
+    7. text-align: left | right | center | justify; 
+        Sets the horizontal alignment of text.  
 
+    8. text-decoration: none | underline | overline | line-through;
+        Adds decorative styles to text.
 
+    9. text-transform: none | capitalize | uppercase | lowercase;
+        Transforms the text to uppercase, lowercase, or capitalize the first letter.
+    
+    10. letter-spacing: 2px; 
+        Sets the space between characters.
+
+    11. word-spacing: 5px; 
+        Sets the space between words.
+    
+    12. color: Sets the text color.
 

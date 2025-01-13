@@ -1,56 +1,222 @@
-CSS display Property:
-The display property in CSS determines how an HTML element is visually rendered in the layout of a web page. It defines the type of box an element generates, affecting its behavior and positioning. The display property can take various values, each with its own characteristics.
+# CSS display Property:
+    The display property in CSS determines how an HTML element is visually rendered in the layout of a web page. 
+    It defines the type of box an element generates, affecting its behavior and positioning. The display property can take various values, each with its own characteristics.
 
-Common display Values:
+1. block:
+    Elements with display: block; generate a block-level box.
+    Block-level elements start on a new line and take up the full width of their parent container. E.g. <div>, <p>, <h1>, and <form>.
+    
+2. inline:
+    Elements with display: inline; generate an inline-level box.
+    Inline-level elements do not start on a new line and only take up as much width as necessary. E.g. <span>, <a>, <strong>, and <em>.
+    
+3. inline-block:
+    Combines aspects of both block and inline elements.
+    Inline-block elements do not start on a new line and can have a specific width and height.
+    Useful for creating inline elements with block-level styling.
 
-block:
-Elements with display: block; generate a block-level box.
-Block-level elements start on a new line and take up the full width of their parent container.
-Examples include <div>, <p>, <h1>, and <form>.
+4. none:
+    Elements with display: none; are not rendered on the page.
+    They are effectively invisible and do not occupy space in the layout.
+    Useful for hiding elements dynamically using JavaScript.
 
-inline:
-Elements with display: inline; generate an inline-level box.
-Inline-level elements do not start on a new line and only take up as much width as necessary.
-Examples include <span>, <a>, <strong>, and <em>.
+5. flex:
+    Introduced with CSS Flexbox.
+    Allows elements to be flexible in their size and layout within a container.
+    Excellent for creating responsive and flexible layouts.
+    In a Flexbox container, the children become flex items.
 
-inline-block:
-Combines aspects of both block and inline elements.
-Inline-block elements do not start on a new line and can have a specific width and height.
-Useful for creating inline elements with block-level styling.
+6. grid:
+    Introduced with CSS Grid Layout.
+    Defines a grid container and its items, enabling complex two-dimensional layouts.
+    Powerful for creating grid-based designs.
+    table, table-row, table-cell, etc.:
+    These values generate elements that mimic the behavior of table elements in HTML.
+    Useful for creating table-like layouts when actual HTML tables are not suitable.
+    In a CSS Grid container, the children become grid items.
 
-none:
-Elements with display: none; are not rendered on the page.
-They are effectively invisible and do not occupy space in the layout.
-Useful for hiding elements dynamically using JavaScript.
+7. list-item:
+    Renders an element as a list item.
+    Typically used with <li> elements within ordered or unordered lists.
 
-flex:
-Introduced with CSS Flexbox.
-Allows elements to be flexible in their size and layout within a container.
-Excellent for creating responsive and flexible layouts.
+8. inline-table:
+    Combines aspects of both inline and table elements.
+    Useful for displaying tables inline with other content.
 
-grid:
-Introduced with CSS Grid Layout.
-Defines a grid container and its items, enabling complex two-dimensional layouts.
-Powerful for creating grid-based designs.
-table, table-row, table-cell, etc.:
-These values generate elements that mimic the behavior of table elements in HTML.
-Useful for creating table-like layouts when actual HTML tables are not suitable.
+9. inherit:
+    Inherits the display property value from the parent element.
+    Allows elements to inherit display behavior.
 
-Additional display Values:
 
-list-item:
-Renders an element as a list item.
-Typically used with <li> elements within ordered or unordered lists.
 
-inline-table:
-Combines aspects of both inline and table elements.
-Useful for displaying tables inline with other content.
 
-inherit:
-Inherits the display property value from the parent element.
-Allows elements to inherit display behavior.
 
-CSS display for CSS Grid and Flexbox:
-CSS Grid (display: grid;) and Flexbox (display: flex;) are two modern layout systems introduced in CSS. They offer more advanced and flexible ways to create responsive layouts. When used, they affect the display behavior of their children:
-In a CSS Grid container, the children become grid items.
-In a Flexbox container, the children become flex items.
+
+
+
+    # Display Properties:
+
+1. `display: block;`
+   - The element will take up the full width available (by default).
+   - It starts on a new line.
+   - It respects both `width` and `height` properties.
+
+      Example:   
+      <style>
+        .block-element {
+          display: block;
+          width: 200px;
+          height: 100px;
+          background-color: lightgreen;
+        }
+      </style>
+
+      <div class="block-element">This is a block element</div>
+   
+2. `display: inline;`
+   - The element remains inline, flowing with the surrounding text.
+   - It does not respect `width` and `height` properties.
+   - It only takes up as much width as its content requires.
+
+      Example:   
+      <style>
+        .inline-element {
+          display: inline;
+          background-color: lightcoral;
+        }
+      </style>
+
+      <span class="inline-element">This is an inline element</span>
+   
+3. `display: inline-block;`
+   - The element remains inline but behaves like a block element.
+   - It respects both `width` and `height` properties.
+   - It does not start on a new line unless necessary (like inline elements).
+
+      Example:   
+      <style>
+        .inline-block-element {
+          display: inline-block;
+          width: 150px;
+          height: 75px;
+          background-color: lightblue;
+        }
+      </style>
+
+      <span class="inline-block-element">This is an inline-block element</span>
+   
+
+6. `display: none;`
+   - The element is not rendered and does not occupy any space in the layout.
+   - It effectively hides the element from view, removing it from the document flow.
+   - No visual space or dimensions are allocated for the element.
+
+   Example:   
+   <style>
+     .hidden-element {
+       display: none;
+     }
+   </style>
+
+   <div class="hidden-element">This element is hidden</div>
+   <p>This paragraph is visible.</p>  
+
+   - The paragraph will be visible, but the `<div>` with `display: none;` will not appear on the page.
+
+7. `display: inherit;`
+   - The element inherits the `display` property from its parent.
+   - Useful when you want to explicitly make an element take the display behavior of its parent, especially in dynamically styled documents.
+
+      Example:   
+      <style>
+        .parent {
+          display: flex;
+        }
+        .child {
+          display: inherit;
+        }
+      </style>
+
+      <div class="parent">
+        <div class="child">This child inherits the flex display</div>
+      </div>  
+
+   - The `.child` element will inherit the `flex` display from the `.parent` element.
+
+8. `display: list-item;`
+   - The element behaves like a list item in a list (`<li>`).
+   - It generates a block box for the content and a marker (like a bullet or number) by default.
+
+      Example:   
+      <style>
+        .custom-list-item {
+          display: list-item;
+          list-style-type: square;
+        }
+      </style>
+
+      <div class="custom-list-item">Custom list item</div>
+   
+   - This will create a square bullet before the text, similar to how an `<li>` behaves inside an unordered list (`<ul>`).
+
+9. Table-Related Display Properties:
+
+   These properties allow you to create table-like structures without using actual `<table>` elements.
+
+   - `display: table;`: Makes the element behave like a table.
+   - `display: table-row;`: Makes the element behave like a row in a table.
+   - `display: table-cell;`: Makes the element behave like a cell in a table.
+
+        Example:   
+        <style>
+          .table {
+            display: table;
+            width: 100%;
+          }
+          .table-row {
+            display: table-row;
+          }
+          .table-cell {
+            display: table-cell;
+            border: 1px solid black;
+            padding: 10px;
+          }
+        </style>
+
+        <div class="table">
+          <div class="table-row">
+            <div class="table-cell">Cell 1</div>
+            <div class="table-cell">Cell 2</div>
+          </div>
+          <div class="table-row">
+            <div class="table-cell">Cell 3</div>
+            <div class="table-cell">Cell 4</div>
+          </div>
+        </div>  
+
+   - This setup will render as a table with rows and cells but uses `<div>` elements instead of actual table tags.
+
+--------------------------------------------------------------------------
+### Summary of Additional Display Properties:
+
+| Display Property | Behavior   | Respects `width` and `height`? | Common Use     
+
+| `none`         | Hides the element, 
+                 | removing it from the document flow | No       | For hiding elements
+
+| `inherit`      | Inherits the `display` property 
+                 | from the parent                     | Depends on parent | To make an element inherit parent's display type 
+
+| `list-item`    | Behaves like a list item, with a marker| Yes | For creating list-likes tructures 
+
+| `table`        | Behaves like a table | Yes  | For creating table-like layouts
+
+| `table-row`    | Behaves like a table row | No  | For rows within table-like structures  
+
+| `table-cell`   | Behaves like a table cell  | Yes  | For cells within table-like structures  
+
+| `block`        | -   | Yes | For block-level elements (e.g., `<div>`, `<p>`) 
+| `inline`       | -   | No  | For text and inline elements (e.g., `<span>`, `<a>`) 
+| `inline-block` | -   | Yes | To combine inline and block behaviors           
+| `flex`         | -   | Yes | For flexible, responsive layouts  
+| `grid`         | -   | Yes | For grid-based layouts           

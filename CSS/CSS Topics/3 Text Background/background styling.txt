@@ -1,10 +1,65 @@
-Background Styling CSS Properties:
+CSS properties related to background styling allow you to control the appearance of an element's background.
+This includes background color, image, position, size, repeat, origin, clip, and attachment.
 
-CSS properties related to background styling allow you to control the appearance of an element's background:
+1. `background-color`: Sets the background color of an element.
+    {
+        background-color: lightblue;
+    }
+     This sets the background color of the element to light blue.
 
-    background-color: Sets the background color of an element.
-    background-image: Specifies an image to be used as the background.
-    background-repeat: Defines how the background image should repeat (e.g., repeat, no-repeat, repeat-x, repeat-y).
-    background-size: Sets the size of the background image (e.g., cover, contain, specific dimensions).
-    background-position: Positions the background image within the element (e.g., center, top right, specific coordinates).
-    background-attachment: Determines whether the background image scrolls with the content or remains fixed.
+2. `background-image`: Sets one or more background images for an element.
+     {
+        background-image: url('background.jpg');
+     }
+     This sets a background image from a specified URL.
+
+3. `background-position`: Sets the initial position of the background image.
+    (e.g. left top,left center,left bottom,right top,right center,right bottom,center top,center center,center bottom, specific coordinates(x% y%)).                            
+    {
+        background-position: center;
+     }
+     This centers the background image.
+
+4. `background-size`: Specifies the size of the background image.
+    {
+        background-size: auto|length|cover|contain|initial|inherit;
+     }
+     This scales the background image to cover the entire element.
+
+5. `background-repeat`: Defines if/how the background image should be repeated.
+    {
+        background-repeat: background-repeat: repeat|repeat-x|repeat-y|no-repeat|initial|inherit;
+     }
+     This ensures the background image does not repeat.
+
+6. `background-attachment`: Sets whether the background image is fixed or scrolls with the page.
+                          e.g. (default)scroll,
+    {
+        background-attachment: scroll|fixed|local|initial|inherit;
+     }
+     This fixes the background image in place, so it does not scroll with the page.
+
+7. `background-origin`: Specifies the positioning area of the background images.
+    {
+        background-origin: padding-box|border-box|content-box|initial|inherit;
+     }
+     This sets the background positioning area to be the border box.
+
+8. `background-clip`: Specifies the painting area of the background.
+    {
+        background-clip: border-box|padding-box|content-box|initial|inherit;
+     }
+     This makes the background extend only to the padding box.
+
+#Using the `background` Shorthand Property:
+    { 
+        background: lightblue url('background.jpg') no-repeat center/cover border-box padding-box fixed;
+    }
+        - A light blue background color.
+        - A background image located at `'background.jpg'`.
+        - The background image is not repeated.
+        - The image is positioned at the center.
+        - The image size is set to cover the entire element.
+        - The background image starts from the border box.
+        - The background extends to the padding box.
+        - The background image is fixed and does not scroll with the page.

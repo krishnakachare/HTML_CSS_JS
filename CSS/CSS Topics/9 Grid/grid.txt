@@ -1,0 +1,103 @@
+CSS Grid Layout:
+    CSS Grid Layout, often referred to simply as Grid, is a powerful two-dimensional layout system introduced in CSS3. 
+    It allows you to create complex grid-based layouts with precision, making it an ideal choice for designing web page structures. 
+    Grid provides control over both rows and columns, enabling you to create responsive and flexible designs.
+    
+`display: grid;`
+   - The element becomes a grid container, allowing child elements to align according to grid layout rules.
+   - It respects `width` and `height` properties.
+   - It’s used for creating grid-based layouts.
+   The Grid Layout is a two-dimensional layout system, meaning it can handle both rows and columns.
+
+Grid Container:
+    To create a Grid layout, you need a grid container, an element that contains grid items.
+
+Grid Items: 
+    Grid items are the children of a grid container.
+    They are the elements you want to place within the grid.
+    Grid items can be any HTML elements.
+
+- Grid Container: The parent element that has `display: grid;`.
+- Grid Items: The child elements inside the grid container.
+
+
+Rows and Columns: 
+    Grid layouts consist of rows and columns, creating a grid of intersecting lines.
+    Rows run horizontally.
+    Columns run vertically.
+
+Grid Lines: 
+    Grid lines are the lines that define the rows and columns.
+    They can be referred to by their line numbers(+ve & -ve) or names(custome name).
+
+Grid Template: 
+   The grid template defines the structure of the grid, specifying the number of rows and columns and their sizes.
+   You can define the grid template using properties like grid-template-rows and grid-template-columns.
+
+Grid Tracks: 
+   Grid tracks are the spaces between grid lines, forming rows and columns.
+   They can have fixed sizes (e.g., 100px) or be flexible (e.g., 1fr).(fraction(fr))
+
+Grid Gap: 
+   Grid gap is the space between grid tracks, both horizontally (column gap) and vertically (row gap).
+   It can be defined using properties like grid-column-gap and grid-row-gap.
+
+
+grid-row and grid-column: 
+   Specify the position of an item within the grid using grid lines.
+
+grid-area: 
+   Assigns an item to a named grid area, defined in the grid template.
+
+grid-row-start, grid-row-end, grid-column-start, grid-column-end: 
+   Define the start and end positions for items.
+
+Grid Template Areas: 
+   Grid areas are named sections of the grid defined in the grid template.
+   You can assign items to specific grid areas using grid-area.
+
+Alignment: 
+   Grid allows precise alignment of items within the grid container using properties like justify-items, align-items, justify-content, and align-content.
+   These properties control both horizontal and vertical alignment.
+
+
+`grid-template-columns`:
+   - Defines the columns of the grid.
+   - Syntax: `grid-template-columns: 100px 200px;` or `repeat(3, 1fr);`.
+   - `grid-template-columns: repeat(3, 1fr);`: Creates three equal columns.
+
+`grid-template-rows`:
+   - Defines the rows of the grid.
+   - Syntax: `grid-template-rows: 100px 200px;` or `repeat(2, 1fr);`.
+   - `grid-template-rows: 100px 100px;`: Creates two rows, each 100px tall.
+
+`grid-template-areas`
+   - Allows you to define named grid areas for easier placement of items.
+   - You can reference these named areas when placing grid items.
+
+`gap`:
+   - Specifies the gap between grid items.
+   - Syntax: `gap: 10px;` or `grid-gap: 10px;`.
+   - `gap: 10px;`: Adds a 10px gap between the grid items.
+
+`justify-items` and `align-items`:
+   - Defines the default alignment for items within their grid area.
+   - Values: `start`, `end`, `center`, `stretch`.
+   
+`grid-auto-flow`
+   - Specifies how auto-placed items are inserted into the grid.
+   - Values:
+     - `row`: Items are placed by rows (default).
+     - `column`: Items are placed by columns.
+     - `dense`: Tries to fill gaps by placing smaller items in them.
+
+`grid-column` and `grid-row`
+   - `grid-column`: Specifies the starting and ending column lines for an item.
+   - `grid-row`: Specifies the starting and ending row lines for an item.
+   - Syntax: `grid-column: start / end;` and `grid-row: start / end;`.
+
+`align-content`: 
+Aligns the whole grid's content along the block (vertical) axis.
+`justify-content`: 
+Aligns the whole grid's content along the inline (horizontal) axis.
+- Values: `start`, `end`, `center`, `space-between`, `space-around`, `space-evenly`, `stretch`.

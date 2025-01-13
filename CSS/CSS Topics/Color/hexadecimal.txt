@@ -1,0 +1,64 @@
+min 0
+max 256
+
+## Hexadecimal numbers work:
+
+# Understanding Hexadecimal Numbers:
+    Hexadecimal (or hex) is a base-16 numbering system, which means it uses 16 symbols to represent values. These symbols are:
+
+        - 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 (representing values 0 to 9, just like in the decimal system)
+        - A, B, C, D, E, F (representing values 10 to 15)
+
+    In the hexadecimal system:
+    - The number `10` in decimal is `A` in hexadecimal.
+    - The number `15` in decimal is `F` in hexadecimal.
+    - The number `255` in decimal is `FF` in hexadecimal.
+
+# Conversion Between Decimal and Hexadecimal:
+    To convert a decimal number to hexadecimal:
+    1. Divide the decimal number by 16.
+    2. The quotient gives the next digit in hexadecimal (starting from the right).
+    3. The remainder gives the current digit.
+
+    For example, to convert the decimal number `255` to hexadecimal:
+    - Divide `255` by `16` → quotient `15` (which is `F` in hexadecimal), remainder `15` (which is also `F`).
+    - So, `255` in decimal is `FF` in hexadecimal.
+
+# How Hexadecimal is Used in Colors:
+    In CSS, colors are represented using three pairs of hexadecimal digits, each pair representing the intensity of red, green, and blue.
+
+    1. Red Component: First two hex digits.
+    2. Green Component: Next two hex digits.
+    3. Blue Component: Last two hex digits.
+
+    Each component can range from `00` (0 in decimal, meaning no intensity) to `FF` (255 in decimal, meaning full intensity).
+
+# Example Conversions:
+    - Red color (`#FF0000`):
+    - Red: `FF` (255 in decimal)
+    - Green: `00` (0 in decimal)
+    - Blue: `00` (0 in decimal)
+
+    - Green color (`#00FF00`):
+    - Red: `00` (0 in decimal)
+    - Green: `FF` (255 in decimal)
+    - Blue: `00` (0 in decimal)
+
+    - Blue color (`#0000FF`):
+    - Red: `00` (0 in decimal)
+    - Green: `00` (0 in decimal)
+    - Blue: `FF` (255 in decimal)
+
+    - Gray color (`#808080`):
+    - Red: `80` (128 in decimal)
+    - Green: `80` (128 in decimal)
+    - Blue: `80` (128 in decimal)
+
+# Total Colors in Hexadecimal:
+    Each color component (Red, Green, Blue) has 256 possible values (`00` to `FF`), so the total number of possible colors is:
+
+    \[
+    256 \times 256 \times 256 = 16,777,216
+    \]
+
+    This gives you over 16 million different color combinations.

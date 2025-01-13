@@ -22,31 +22,11 @@ PSUEDO-ELEMENTS
     CSS Pseudo-classes:
     CSS Pseudo-selectors:
 
-Color theory
-color
-
 css units
-
 position
 overflow
-
 display
-
-flex
-
-grid
-
-CSS display for CSS Grid and Flexbox
-
-CSS Flexbox (Flexible Box Layout):
-
-Flex Container:
-Flex Items
-Main Axis and Cross Axis:
-Flex Container Properties:
-CSS Grid Layout:
-
-z index
+z-index
 css functions
 
 *  01 | Font
@@ -63,6 +43,7 @@ css functions
 *  12 | Transitions
          Transform
 *  13 | CSS Flexbox (Important)
+           Main Axis and Cross Axis
 *        - Parent Properties (flex container)
 *        - Child Properties (flex items)
 *  14 | CSS Grid (Useful in Complex Web Designs)
@@ -75,3 +56,65 @@ Responsive Web Design:
 
 CSS Frameworks:
     - Bootstrap, Tailwind CSS
+
+
+=======================================================
+# Lecture Notes:
+HTML:
+  Intro-History(internet,browser,webpage), html
+  code setup
+  HTML template, comments
+  head: title, link, style
+  body:
+  Headings, paragraph
+  html elemet structure
+  self closing element
+  attribute
+  text formatting tags
+  a,img,ul,ol,table,button
+  sematic element
+  block, inline element
+  div vs span
+  Form:
+    input(all type), lable, option
+    datalist
+    select
+    textarea
+    form,fieldset
+    form validation
+  media:
+    source
+    picture
+    figure    
+    audio
+    video   
+  html entity
+  Frame: iframe
+------------------------------------
+
+CSS:
+  css intro, comments
+  HTML+css integration
+  inheritance, specificity, !important
+  selectors
+  Pseudo class, Pseudo selectors/elements
+  box model
+  overflow
+  shadow,outline
+  css units
+  color
+  background
+  custome css property
+  text,font
+  position
+  z-index
+  float
+  display
+  flex
+  grid
+  media Query
+  transform,transition
+  animation
+--------------
+responsive: viewport
+https://www.geeksforgeeks.org/html-responsive-web-design/

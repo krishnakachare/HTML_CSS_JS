@@ -1,0 +1,35 @@
+b. `align-content` and `justify-content`
+- `align-content`: Aligns the whole grid's content along the block (vertical) axis.
+- `justify-content`: Aligns the whole grid's content along the inline (horizontal) axis.
+- Values: `start`, `end`, `center`, `space-between`, `space-around`, `space-evenly`, `stretch`.
+
+Example:
+<style>
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 100px);
+        grid-template-rows: repeat(2, 100px);
+        gap: 10px;
+        justify-content: space-around;
+        align-content: center;
+        height: 400px;
+    }
+
+    .grid-item {
+        background-color: lightcoral;
+        text-align: center;
+        line-height: 100px;
+    }
+</style>
+
+<div class="grid-container">
+    <div class="grid-item">1</div>
+    <div class="grid-item">2</div>
+    <div class="grid-item">3</div>
+    <div class="grid-item">4</div>
+    <div class="grid-item">5</div>
+    <div class="grid-item">6</div>
+</div>
+
+- `justify-content: space-around;` spaces the grid evenly along the horizontal axis.
+- `align-content: center;` centers the grid content along the vertical axis within the container.

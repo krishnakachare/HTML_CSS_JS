@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS rgb colors</title>
+    <style>
+        h2 {
+            /* red, green, blue */
+            /* Min 0 Max 256 */
+            color: rgb(199, 1, 120);
+            /* red */
+            /* color: rgb(256, 0, 0); */
+            /* green */
+            /* color: rgb(0, 256, 0); */
+            /* blue */
+            /* color: rgb(0, 0, 256); */
+
+            /* White */
+            /* color: rgb(256, 256, 256); */
+            /* Black */
+            /* color: rgb(0, 0, 0); */
+        }
+
+        h2:nth-child(2) {
+            /* red, green, blue, opacity(0-1) 
+             0.0 (fully transparent) and 1.0 (not transparent at all)
+            */
+            color: rgb(199, 1, 120, 0.3);
+        }
+    </style>
+</head>
+
+<body>
+    <h2>RGB Color Text1</h2>
+    <h2>RGB Color Transferent Text2</h2>
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+5. `display: grid;`
+- The element becomes a grid container, allowing child elements to align according to grid layout rules.
+- It respects `width` and `height` properties.
+- It’s used for creating grid-based layouts.
+
+Example:
+<style>
+    .grid-container {
+        display: grid;
+        width: 300px;
+        height: 150px;
+        background-color: lightyellow;
+        grid-template-columns: 1fr 1fr;
+    }
+</style>
+
+<div class="grid-container">
+    <div>Item 1</div>
+    <div>Item 2</div>
+</div>
+
+### 2. `display: grid;` (Grid Layout)
+
+The Grid Layout is a two-dimensional layout system, meaning it can handle both rows and columns.
+
+#### Key Concepts of Grid
+
+- Grid Container: The parent element that has `display: grid;`.
+- Grid Items: The child elements inside the grid container.
+
+#### Grid Container Properties
+
+1. `grid-template-columns`:
+- Defines the columns of the grid.
+- Syntax: `grid-template-columns: 100px 200px;` or `repeat(3, 1fr);`.
+
+2. `grid-template-rows`:
+- Defines the rows of the grid.
+- Syntax: `grid-template-rows: 100px 200px;` or `repeat(2, 1fr);`.
+
+3. `gap`:
+- Specifies the gap between grid items.
+- Syntax: `gap: 10px;` or `grid-gap: 10px;`.
+
+4. `justify-items` and `align-items`:
+- Defines the default alignment for items within their grid area.
+- Values: `start`, `end`, `center`, `stretch`.
+
+#### Example of Grid Layout:
+<style>
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 100px 100px;
+        gap: 10px;
+        border: 2px solid black;
+    }
+
+    .grid-item {
+        background-color: lightblue;
+        text-align: center;
+        line-height: 100px;
+    }
+</style>
+
+<div class="grid-container">
+    <div class="grid-item">1</div>
+    <div class="grid-item">2</div>
+    <div class="grid-item">3</div>
+    <div class="grid-item">4</div>
+    <div class="grid-item">5</div>
+    <div class="grid-item">6</div>
+</div>
+
+- `grid-template-columns: repeat(3, 1fr);`: Creates three equal columns.
+- `grid-template-rows: 100px 100px;`: Creates two rows, each 100px tall.
+- `gap: 10px;`: Adds a 10px gap between the grid items.

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS custome properties (var)</title>
+    <style>
+        /* css custome property need to define on globaly.
+        Hence, its defined in html root
+        */
+        :root {
+            /* 
+                Syntax:
+                    --propertyName: value
+            */
+            --color: hotpink;
+        }
+
+        h1 {
+            /* color: hotpink; */
+            color: var(--color);
+            /* 
+            can acces global property using var method. Here we are calling the variable.
+            */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Heading 1</h1>
+</body>
+
+</html>

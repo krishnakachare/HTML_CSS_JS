@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floating Multiple Elements</title>
+    <style>
+        .box {
+            float: left;
+            width: 33.33%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <p>
+        Explanation: Three boxes are floated to the left, each taking up one-third of the container width. The
+        `clearfix` class
+        clears the floats to maintain the layout.
+    </p>
+    <div class="clearfix">
+        <div class="box" style="background-color: lightgreen;">Box 1</div>
+        <div class="box" style="background-color: lightpink;">Box 2</div>
+        <div class="box" style="background-color: lightyellow;">Box 3</div>
+    </div>
+</body>
+
+</html>

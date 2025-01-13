@@ -1,0 +1,53 @@
+<pre>
+    3. Combining Flexbox and Grid in a Layout:
+        Example: A layout with a header, a sidebar (using Grid), and a main content area with items aligned using Flexbox.
+        The outer structure is managed by the Grid layout.
+        The `main` content area uses Flexbox to align items vertically and center them.
+</pre>
+
+<style>
+    .container {
+        display: grid;
+        grid-template-areas:
+            "header header"
+            "sidebar main";
+        grid-template-columns: 200px 1fr;
+        grid-template-rows: auto 1fr;
+        height: 100vh;
+    }
+
+    .header {
+        grid-area: header;
+        background-color: lightgreen;
+    }
+
+    .sidebar {
+        grid-area: sidebar;
+        background-color: lightcoral;
+    }
+
+    .main {
+        grid-area: main;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: lightblue;
+    }
+
+    .item {
+        background-color: white;
+        padding: 20px;
+        margin: 10px;
+    }
+</style>
+
+<div class="container">
+    <div class="header">Header</div>
+    <div class="sidebar">Sidebar</div>
+    <div class="main">
+        <div class="item">Main Item 1</div>
+        <div class="item">Main Item 2</div>
+        <div class="item">Main Item 3</div>
+    </div>
+</div>

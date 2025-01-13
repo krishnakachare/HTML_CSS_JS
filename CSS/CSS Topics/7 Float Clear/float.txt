@@ -1,0 +1,31 @@
+float:left|right
+    `left`: The element floats to the left of its container.
+    `right`: The element floats to the right of its container.
+    `none`: Default value; the element does not float.
+    `inherit`: Inherits the float value from its parent element.
+
+Float is used to keep an element floating right/left of UI.
+It will remove the element from the actual flow , so that the next element will fill the gap when the current element stays left/right.
+
+clear:left|right|both
+Note: if the next don't want floating element to be its left/right , it can use "clear" like
+
+# Clearing Floats:
+
+When you use float, it can sometimes cause parent elements not to wrap around the floated elements, disrupting the layout. To fix this, you need to clear the float.
+
+- `clear` property: Used to stop elements from wrapping around floated elements.
+- `clearfix` hack: A common method to clear floats using the `::after` pseudo-element.
+
+        .clearfix::after {
+          content: "";
+          display: block;
+          clear: both;
+        }
+
+# Common Issues with Float:
+- Collapsed Parent Container: Floated elements can cause their parent container to collapse if not properly cleared.
+- Overflowing Elements: Floated elements may overflow if not contained or cleared.
+
+# Modern Alternatives:
+While `float` was historically used for layout, modern CSS layout techniques like Flexbox and CSS Grid are now preferred for most layout tasks due to their flexibility and ease of use.

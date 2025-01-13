@@ -162,6 +162,4 @@ Body Section:
 
 Responsive Design:
 
-
-
 html code check: HTML validator, diffchecker

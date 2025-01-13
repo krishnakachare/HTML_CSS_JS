@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS hsl Colors</title>
+    <style>
+        h2 {
+            /* 
+            hue(h): Color from wheen (degree)
+            saturation(s): purity % (intensity). 0% gray, 100% pure hue(base) color
+            lightness(l): Make fent/dark. 0%Black, 50%Pure color ,100%White
+            */
+            /* Pure hue(base) color */
+            /* color: hsl(120, 100%, 50%); */
+            color: hsl(120, 100%, 70%);
+        }
+
+        h2:nth-child(2) {
+            /* red, green, blue, opacity(0-1) 
+             0.0 (fully transparent) and 1.0 (not transparent at all)
+            */
+            color: hsl(120, 100%, 50%, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+    <h2>hsl Color Text1</h2>
+    <h2>hsl Color Transferent Text2</h2>
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+While it behaves similarly to the html selector, the :root selector has higher specificity and is commonly used to define global styles or CSS custom properties (variables). The styles defined within the :root block will apply to the entire document unless overridden by more specific rules.
+
+<style>
+    :root{
+        --blue: blue;
+    }
+
+    selector{
+        color: var(--blue)
+    }
+</style>

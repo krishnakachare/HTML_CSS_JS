@@ -1,0 +1,87 @@
+CSS Flexbox (Flexible Box Layout):
+    CSS Flexbox, is a powerful layout model introduced in CSS3 to efficiently distribute space and align content in a container, even when their sizes are unknown or dynamic. 
+    It provides a more predictable and efficient way to design layouts and align items within a container. 
+    Flexbox is particularly useful for creating flexible, responsive and complex layouts with ease.
+
+display: flex;
+    flex is a property of display. 
+    It should be given to flexbox container.
+    Now can apply all flexbox properties.
+    Flex is mainly used when you want to show element in one direction or dimension.
+
+Flex Container:
+    To create a Flexbox layout, you need a flex container. 
+    It's an element that contains one or more flex items.
+
+Flex Items:
+    Flex items are the children(items) of a flex container.
+    They are the elements you want to arrange within the container.
+    Flex items can be any HTML elements.
+
+Main Axis and Cross Axis:
+    Flexbox operates along two axes: the main axis and the cross axis.
+    Main Axis: where all elements are arranged or the primary axis along which flex items are laid out
+    Cross Axis: where each element is arranged or perpendicular to the main axis.
+
+===========================================================
+Flex Container Properties:
+
+    flex-direction: 
+        Defines the direction of the main axis or flex items. (row(default), row-reverse, column, column-reverse).
+
+    flex-wrap: 
+        Determines whether flex items should wrap onto multiple lines if they overflow the container.
+        Values: `nowrap` (default), `wrap`, `wrap-reverse`.
+---------------------
+#Along the main aixs:
+    justify-content: 
+        Aligns flex items along the main axis.
+        Values: `flex-start`, `flex-end`, `center`, `space-between`, `space-around`, `space-evenly`.
+
+----------------------
+#Along the cross aixs:
+    align-items: 
+        Aligns flex items along the cross axis.
+        Values: `flex-start`, `flex-end`, `center`, `baseline`, `stretch`.
+        align-item is used for the 1 line.
+
+    align-content: 
+        Controls alignment of multiple lines of flex items along the cross axis when they wrap.
+        align-content is used for the multipal line.
+
+#Item Properties:
+    row-gap: gap bt rows
+    column-gap: gap bt the item box(like margin).
+    gap: row-gap, column-gap;
+    gap:10px; gap bt the item box(like margin).
+ 
+flex-flow: flex-direction, flex-wrap;
+
+===============================================================
+Flex Item Properties: we can set for the all or particular one
+
+    flex-grow: 
+        Determines how much a flex item should grow relative to other items when extra space is available.
+        Default value is `0`, meaning the item will not grow.
+        A value of `1` means the item will grow to fill any available space.
+
+    flex-shrink:
+        Controls how much a flex item should shrink when there's not enough space.
+        Default value is `1`, meaning the item will shrink.
+
+    flex-basis: 
+        Specifies the initial size of a flex item.
+        Can be set to a fixed value or a percentage.
+
+    flex (Shorthand): 
+        Combines flex-grow, flex-shrink, and flex-basis in one declaration.
+
+    order: 
+        Specifies the order in which flex items are displayed within the container.
+        Default order is zero.
+        Items with lower order values appear first. If have same order then those elements appears as per the codeing order.
+        Highest oder element appear at the last of line.
+
+    align-self:
+        Allows the alignment of individual flex items, overriding the `align-items` property of the container.
+        Values: `auto`, `flex-start`, `flex-end`, `center`, `baseline`, `stretch`.

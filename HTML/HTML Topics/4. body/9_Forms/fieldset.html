@@ -31,29 +31,29 @@
 <body>
     <div>
         <!-- Default method is GET -->
-        <form action="abc.in" method="post">
+        <form action="abc.in" method="get">
             <label>First Name:
-                <input type="text" required>
+                <input type="text" name="firstName">
             </label><br>
             <label>DOB:
-                <input type="date">
+                <input type="date" name="DOB">
             </label><br>
             <!-- 
             The <fieldset> tag is used to group related elements in a form.
                 The <fieldset> tag draws a box around the related elements. -->
             <fieldset>
                 <!-- Defines a caption for the <fieldset> element. -->
-                <legend>Select Gender</legend>
+                <legend>Select Gender:</legend>
                 <label>Male:
-                    <input type="radio" name="radio">
+                    <input type="radio" name="radio" vlaue="Male">
                 </label><br>
                 <label>Female:
-                    <input type="radio" name="radio">
+                    <input type="radio" name="radio" value="Female">
                 </label><br>
             </fieldset>
 
-            <input type="submit">
-            <input type="reset">
+            <input type="submit" value="submit">
+            <input type="reset" value="reset">
         </form>
     </div>
 </body>

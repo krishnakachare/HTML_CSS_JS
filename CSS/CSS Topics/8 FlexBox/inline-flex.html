@@ -1,0 +1,34 @@
+<pre>
+`display: flex` Vs `display: inline-flex` :
+
+    # `display: flex` =>
+        - The element becomes a block-level flex container.
+        - It behaves like a block element, meaning it takes up the full width available by default.
+        - It starts on a new line, pushing other elements below it.
+        - Use `display: flex` when you want the container to behave like a block-level element.
+
+    # `display: inline-flex` =>
+        - The element becomes an inline-level flex container.
+        - It behaves like an inline element, meaning it only takes up as much width as necessary and stays on the same line as adjacent elements if there’s space.
+        - It does not start on a new line, allowing other inline elements to sit next to it.
+        - Use `display: inline-flex` when you want the container to behave like an inline element but still apply flex properties to its children.
+</pre>
+
+<style>
+    .container {
+        display: inline-flex;
+        width: 300px;
+        border: 1px solid black;
+    }
+
+    .item {
+        background-color: lightgreen;
+        padding: 10px;
+        margin: 5px;
+    }
+</style>
+<div class="container">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+</div>
+<p>This paragraph can sit next to the inline-flex container if there is enough space.</p>

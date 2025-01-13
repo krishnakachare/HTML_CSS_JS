@@ -1,0 +1,28 @@
+b. `grid-auto-flow`
+- Specifies how auto-placed items are inserted into the grid.
+- Values:
+- `row`: Items are placed by rows (default).
+- `column`: Items are placed by columns.
+- `dense`: Tries to fill gaps by placing smaller items in them.
+
+Example:
+<style>
+    .grid-container {
+        display: grid;
+        grid-template-columns: 100px 100px;
+        grid-auto-flow: dense;
+        gap: 10px;
+    }
+
+    .grid-item {
+        background-color: lightyellow;
+        padding: 20px;
+    }
+</style>
+
+<div class="grid-container">
+    <div class="grid-item" style="grid-column: span 2;">Item 1</div>
+    <div class="grid-item">Item 2</div>
+    <div class="grid-item">Item 3</div>
+    <div class="grid-item">Item 4</div>
+</div>

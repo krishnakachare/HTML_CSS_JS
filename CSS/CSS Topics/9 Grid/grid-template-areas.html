@@ -1,0 +1,44 @@
+a. `grid-template-areas`
+- Allows you to define named grid areas for easier placement of items.
+- You can reference these named areas when placing grid items.
+
+Example:
+<style>
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+            "header header"
+            "sidebar content"
+            "footer footer";
+        grid-template-rows: auto 1fr auto;
+        grid-template-columns: 150px 1fr;
+        gap: 10px;
+    }
+
+    .header {
+        grid-area: header;
+        background-color: lightgreen;
+    }
+
+    .sidebar {
+        grid-area: sidebar;
+        background-color: lightcoral;
+    }
+
+    .content {
+        grid-area: content;
+        background-color: lightblue;
+    }
+
+    .footer {
+        grid-area: footer;
+        background-color: lightgrey;
+    }
+</style>
+
+<div class="grid-container">
+    <div class="header">Header</div>
+    <div class="sidebar">Sidebar</div>
+    <div class="content">Content</div>
+    <div class="footer">Footer</div>
+</div>

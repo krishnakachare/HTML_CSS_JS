@@ -1,0 +1,75 @@
+HSL (Hue, Saturation, Lightness) is another way to represent colors in CSS, offering a more intuitive way to define colors compared to the RGB model.
+
+# HSL Color Model:
+    HSL stands for:
+    - Hue: The type of color.
+    - Saturation: The intensity or purity of the color.
+    - Lightness: The brightness or darkness of the color.
+
+# Components of HSL:
+    1. Hue (`H`):
+    - Hue represents the color itself and is given as an angle in degrees on the color wheel, ranging from `0` to `360`.
+    - Different angles correspond to different colors:
+        - `0°`: Red
+        - `60°`: Yellow
+        - `120°`: Green
+        - `180°`: Cyan
+        - `240°`: Blue
+        - `300°`: Magenta
+        - `360°`: Back to Red
+
+    2. Saturation (`S`):
+    - Saturation refers to the intensity or purity of the color, expressed as a percentage.
+    - `100%` saturation means the color is fully pure, with no addition of gray.
+    - `0%` saturation means the color is completely desaturated (a shade of gray).
+
+    3. Lightness (`L`):
+    - Lightness indicates how light or dark the color is, also expressed as a percentage.
+    - `0%` lightness means the color is completely black.
+    - `100%` lightness means the color is completely white.
+    - `50%` lightness means the color is at its full intensity.
+
+# HSL Syntax in CSS:
+    The HSL value is written as `hsl(hue, saturation, lightness)`.
+        p {
+        color: hsl(120, 100%, 50%); /* Bright green */
+        }
+
+# How HSL Works:
+    - Hue determines the base color.
+    - Saturation adjusts how vivid or dull the color appears.
+    - Lightness adjusts how light or dark the color appears.
+
+# Examples:
+    1. Red Color: `hsl(0, 100%, 50%)`
+        - Hue: `0°` (Red)
+        - Saturation: `100%` (fully saturated)
+        - Lightness: `50%` (standard brightness)
+
+    2. Soft Red (Pinkish): `hsl(0, 50%, 75%)`
+        - Hue: `0°` (Red)
+        - Saturation: `50%` (less saturated)
+        - Lightness: `75%` (lighter)
+
+    3. Desaturated Blue (Grayish Blue): `hsl(240, 20%, 50%)`
+        - Hue: `240°` (Blue)
+        - Saturation: `20%` (low saturation, more gray)
+        - Lightness: `50%` (standard brightness)
+
+    4. Bright Yellow: `hsl(60, 100%, 50%)`
+        - Hue: `60°` (Yellow)
+        - Saturation: `100%` (fully saturated)
+        - Lightness: `50%` (standard brightness)
+
+# Adjusting Colors with HSL:
+    1. Increasing Saturation makes the color more vivid.
+    - `hsl(120, 50%, 50%)` vs. `hsl(120, 100%, 50%)` (more vivid green).
+
+    2. Decreasing Saturation makes the color more muted.
+    - `hsl(120, 100%, 50%)` vs. `hsl(120, 20%, 50%)` (more muted green).
+
+    3. Increasing Lightness makes the color lighter.
+    - `hsl(120, 100%, 50%)` vs. `hsl(120, 100%, 75%)` (lighter green).
+
+    4. Decreasing Lightness makes the color darker.
+    - `hsl(120, 100%, 50%)` vs. `hsl(120, 100%, 25%)` (darker green).

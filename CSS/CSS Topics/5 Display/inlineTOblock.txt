@@ -1,0 +1,46 @@
+By default, inline elementsin HTML do not respect the `width` and `height` properties because they are meant to flow within a line of text and adjust their size automatically based on their content.
+
+# Inline Elements:
+  - Do not start on a new line.
+  - Only take up as much width as their content.
+  - Ignore `width` and `height` properties when applied directly.
+    E.g: <span>, <a>, <em>, <strong> 
+
+# Applying `width` and `height` to Inline Elements:
+To apply `width` and `height` to an inline element, you need to change its display property:
+
+1. Convert to Block-Level Element:
+   Use `display: block;` or `display: inline-block;` to change the behavior of inline elements.
+   
+   - `display: block;`: The element will behave like a block element, taking up the full width available.
+   - `display: inline-block;`: The element remains inline but will respect `width` and `height`.
+
+Example:
+    <style>
+        .inline-element {
+          display: inline-block;
+          width: 100px;
+          height: 50px;
+          background-color: lightblue;
+        }
+    </style>
+
+<span class="inline-element">This is a span</span>
+
+In this example:
+  - The `<span>` element is styled as `inline-block`.
+  - It will now respect the `width` and `height` properties.
+
+===================================
+Display Property:
+Display is used to display certain elements in a container
+
+display: block--> will make an element or elements in a container block.
+display: inline ---> will make an element or elements in a container inline
+* inline elements cannot have height or width
+
+To make elements inline and use height/width also , we use inline-block
+
+display: table --> will elements in a container as table elements.
+
+display:none will remove the element from DOM such that its space is occupied by next element.

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two-Column Layout</title>
+    <style>
+        .column {
+            float: left;
+            width: 50%;
+            box-sizing: border-box;
+            padding: 10px;
+        }
+
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="clearfix">
+        <div class="column" style="background-color: lightcoral;">Column 1</div>
+        <div class="column" style="background-color: lightblue;">Column 2</div>
+    </div>
+    <!-- - The `.column` class floats each column to the left, making them sit side by side.
+    - The `.clearfix` class uses the `::after` pseudo-element to clear the float, ensuring the container properly wraps
+    around the floated columns. -->
+</body>
+
+</html>
