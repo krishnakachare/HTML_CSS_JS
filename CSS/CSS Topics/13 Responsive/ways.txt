@@ -222,4 +222,3 @@ Example:
 - Flexbox and CSS Grid provide modern, flexible layout solutions.
 - Viewport Units adapt element sizes to the viewport.
 - Frameworks like Bootstrap offer pre-built responsive components.
-
