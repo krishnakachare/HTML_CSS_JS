@@ -1,4 +1,5 @@
 Responsive Design:
+
 Media Queries are crucial for creating responsive designs that adapt to various screen sizes and devices.
 They help ensure a consistent user experience across different platforms.
 
