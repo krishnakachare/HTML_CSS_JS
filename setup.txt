@@ -82,6 +82,19 @@ Host the project from the github:
 
 
 
+https://flexboxfroggy.com/
+https://cssbattle.dev/
+https://animate.style/
+
+https://minicss.us/docs.htm
+
+
+Extensions:
+IntelliSense for CSS class names in HTML
+
+API:
+https://fakestoreapi.com/
+
 ====================================================================
 ## Git Basic:
 First download and install Git and verify it by "git -v"

@@ -163,3 +163,20 @@ Body Section:
 Responsive Design:
 
 html code check: HTML validator, diffchecker
+
+
+
+
+
+https://flexboxfroggy.com/
+https://cssbattle.dev/
+https://animate.style/
+
+https://minicss.us/docs.htm
+
+
+Extensions:
+IntelliSense for CSS class names in HTML
+
+API:
+https://fakestoreapi.com/
