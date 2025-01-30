@@ -1,0 +1,7 @@
+CSS Overflow
+Sometimes the content shown is too large to be visible in a single line or division of the website. So, to avoid loss of that information we can use overflow property.
+
+ 
+
+Overflow Visible
+This makes the whole text visible irrespective of the container size.
