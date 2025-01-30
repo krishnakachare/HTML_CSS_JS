@@ -1,0 +1,20 @@
+CSS Maths Functions
+Maths functions helps us in fighting dimensions of elements or screen autonomously and thus helps in the responsiveness of a website.
+
+ 
+
+Calc() Function
+Calculates the value generally width of a particular property.
+
+Eg: width: calc(100%-20px);
+
+
+This function will automatically subtract 20px from whatever is the 100% width of that container on the website. This way you can space your elements well without hassles.
+
+ 
+
+Max & Min Functions
+This function takes two parameters and gives the result out of one accordingly.
+
+Eg: width: max(50px, 50%);
+Out of these two whichever would be greater, would be assigned as a value to the width; vice versa happens for the minimum function.
