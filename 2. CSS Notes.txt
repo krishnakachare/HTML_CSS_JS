@@ -118,3 +118,41 @@ CSS:
 --------------
 responsive: viewport
 https://www.geeksforgeeks.org/html-responsive-web-design/
+
+
+🚀 The Right Approach to Learning CSS & SCSS
+🔴 Why You Shouldn't Ignore CSS & HTML?
+Many developers focus only on JavaScript but forget that CSS & HTML are the backbone of web development. SCSS (SASS) is widely used in the industry, and to master it, you first need a strong CSS foundation.
+🚀HTML Roadmap :
+
+🔴 HTML Fundamentals
+├── 🔵 Structure & Syntax
+│  ├── 🟢 Elements & Tags
+│  ├── 🟢 Attributes & Forms
+│  ├── 🟢 Semantic HTML
+│  ├── 🟢 Accessibility (ARIA)
+│  ├── 🟢 Meta Tags & SEO
+│  ├── 🟢 Media (Images, Audio, Video)
+│  ├── 🟢 Tables & Lists
+│  ├── 🟢 Forms & Validations
+
+🔴 CSS & SCSS Roadmap
+🔴 CSS Fundamentals
+├── 🔵 Core Concepts
+│  ├── 🟢 Selectors & Specificity
+│  ├── 🟢 Box Model
+│  ├── 🟢 Positioning (Static, Relative, Absolute, Fixed)
+│  ├── 🟢 Flexbox & Grid
+│  ├── 🟢 Responsive Design (Media Queries)
+│  ├── 🟢 Animations & Transitions
+│  ├── 🟢 CSS Variables & Custom Properties
+
+🔴 SCSS (SASS) Roadmap
+├── 🔵 Why SCSS?
+│  ├── 🟢 Nesting & Partials
+│  ├── 🟢 Variables & Functions
+│  ├── 🟢 Mixins & Extend
+│  ├── 🟢 Loops & Conditionals
+│  ├── 🟢 SCSS Architecture (7-1 Pattern)
+│  ├── 🟢 Compiling SCSS to CSS
+│  ├── 🟢 SCSS Best Practices
