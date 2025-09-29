@@ -33,3 +33,72 @@
     28. Describe the difference between margin collapsing and margin collapsing prevention.
     29. How do you handle vendor prefixes in CSS?
     30. What are the advantages and disadvantages of using CSS frameworks like Bootstrap?
+
+
+
+
+    Top 10 CSS Interview Questions
+
+1. What is CSS and what are its key features?
+CSS (Cascading Style Sheets) is a stylesheet language used to describe the presentation of a document written in HTML or XML. Its key features include controlling layout, styling text, setting colors, spacing, and more, allowing for a separation of content and design for better maintainability and flexibility.
+
+2. Explain the difference between inline, internal, and external CSS.
+- Inline CSS is applied directly within an HTML element using the style attribute.
+- Internal CSS is defined within a <style> tag inside the <head> section of an HTML document.
+- External CSS is linked to an HTML document via the <link> tag and is written in a separate .css file.
+
+3. What is the CSS box model and what are its components?
+The CSS box model describes the rectangular boxes generated for elements in the document tree and consists of four components:
+- Content: The actual content of the element.
+- Padding: The space between the content and the border.
+- Border: The edge surrounding the padding.
+- Margin: The space outside the border that separates the element from others.
+
+4. How do you center a block element horizontally using CSS?
+To center a block element horizontally, you can use the margin: auto; property. For example:
+.center {
+  width: 50%;
+  margin: auto;
+}
+5. What are CSS selectors and what are the different types?
+CSS selectors are patterns used to select elements to apply styles. The different types include:
+- Universal selector (*)
+- Element selector (element)
+- Class selector (.class)
+- ID selector (#id)
+- Attribute selector ([attribute])
+- Pseudo-class selector (:pseudo-class)
+- Pseudo-element selector (::pseudo-element)
+
+6. Explain the difference between absolute, relative, fixed, and sticky positioning in CSS.
+- relative: The element is positioned relative to its normal position.
+- absolute: The element is positioned relative to its nearest positioned ancestor or the initial containing block if none exists.
+- fixed: The element is positioned relative to the viewport and does not move when the page is scrolled.
+- sticky: The element is treated as relative until a given offset position is met in the viewport, then it behaves as fixed.
+
+7. What is Flexbox and how is it used in CSS?
+Flexbox (Flexible Box Layout) is a layout model that allows for more efficient arrangement of elements within a container. It is used to align and distribute space among items in a container, even when their size is unknown or dynamic. Flexbox is enabled by setting display: flex; on a container element.
+
+8. How do you create a responsive design in CSS?
+Responsive design can be achieved using media queries, flexible grid layouts, and relative units like percentages, em, and rem. Media queries adjust styles based on the viewport's width, height, and other characteristics. For example:
+@media (max-width: 600px) {
+  .container {
+    width: 100%;
+  }
+}
+9. What are CSS preprocessors and name a few popular ones.
+CSS preprocessors extend CSS with variables, nested rules, and functions, making it more powerful and easier to maintain. Popular CSS preprocessors include:
+- Sass (Syntactically Awesome Style Sheets)
+- LESS (Leaner Style Sheets)
+- Stylus
+
+10. How do you implement CSS animations?
+CSS animations are implemented using the @keyframes rule to define the animation and the animation property to apply it to an element. For example:
+@keyframes example {
+  from {background-color: red;}
+  to {background-color: yellow;}
+}
+
+.element {
+  animation: example 5s infinite;
+}
