@@ -36,4 +36,4 @@
 
 - 🔗[RoadMap:](https://roadmap.sh/)
 
-![HTML CSS JS](html-css-JS.webp)
+![HTML CSS JS](HTML-CSS-JS.png)
