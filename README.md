@@ -17,6 +17,8 @@
 - 🔗[minicss:](https://minicss.us/docs.htm)
 - 🔗[Animation Maker:](https://dancelogo.com/)
 
+---
+
 - 🔗[Figma:](https://www.figma.com/)
 - 🔗[MDN:](https://developer.mozilla.org/)
 
@@ -34,4 +36,4 @@
 
 - 🔗[RoadMap:](https://roadmap.sh/)
 
-[HTML CSS JS:](html-css-JS.webp)
+![HTML CSS JS](html-css-JS.webp)
